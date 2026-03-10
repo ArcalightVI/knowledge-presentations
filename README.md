@@ -13,6 +13,7 @@ Sometimes it is different to ask *"what is something"* than to understand **the 
 ## Available Presentations
 
 - [Introduction to Artificial Intelligence](https://arcalightvi.github.io/knowledge-presentations/ai-introduction.html)
+- [Prompt Engineering](https://arcalightvi.github.io/knowledge-presentations/prompt-engineering.html)
 
 *(More presentations will be added over time.)*
 
