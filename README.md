@@ -1,5 +1,3 @@
-# Knowledge Presentations
-
 A collection of educational HTML presentations designed to explain technology concepts in a clear and accessible way.
 
 The goal of this repository is to share simple visual explanations about different topics. These presentations are not meant to be deep technical documentation, but rather short introductions that help people understand **what a concept is and why it matters**.
