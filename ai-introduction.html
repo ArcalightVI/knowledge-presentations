@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendiendo la Inteligencia Artificial (IA)</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una lectura limpia y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Barra de progreso de lectura */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            z-index: 50;
+            width: 0%;
+            transition: width 0.1s;
+        }
+        /* Decoración de fondo */
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-800 antialiased">
+
+    <!-- Barra de progreso -->
+    <div id="progress-bar"></div>
+
+    <!-- Cabecera / Hero -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 bg-opacity-90 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto px-6 py-4 text-center">
+            <h1 class="text-2xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+                Presentación: Entendiendo la Inteligencia Artificial (IA)
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Diapositiva 1 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 1
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">¿Por qué todo el mundo habla de Inteligencia Artificial?</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                En los últimos años la Inteligencia Artificial pasó de ser una tecnología experimental a una herramienta que millones de personas usan todos los días.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <p class="font-semibold text-slate-800 mb-2">Hoy existen asistentes como:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                        <li>ChatGPT</li>
+                        <li>Gemini</li>
+                        <li>Grok</li>
+                        <li>Llama</li>
+                    </ul>
+                </div>
+                <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100">
+                    <p class="font-semibold text-indigo-900 mb-2">Estas herramientas pueden:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-indigo-700">
+                        <li>escribir textos</li>
+                        <li>programar</li>
+                        <li>resumir información</li>
+                        <li>analizar datos</li>
+                        <li>generar ideas</li>
+                        <li>responder preguntas complejas</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-lg text-slate-700 mt-6 font-medium text-center bg-purple-50 p-4 rounded-lg">
+                Pero para usar la IA correctamente, primero debemos entender cómo funciona realmente.
+            </p>
+        </article>
+
+        <!-- Diapositiva 2 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 2
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">¿Qué es realmente la IA que usamos hoy?</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                La mayoría de las herramientas actuales utilizan algo llamado:<br>
+                <span class="text-2xl font-extrabold text-purple-600 block mt-2">LLM (Large Language Model)</span>
+                <span class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Modelo de Lenguaje Extenso.</span>
+            </p>
+            <p class="text-lg text-slate-700 mb-4">
+                Estos modelos están diseñados para entender y generar lenguaje humano.
+            </p>
+            <div class="bg-slate-50 border-l-4 border-purple-400 p-5 rounded-r-xl my-6">
+                <p class="font-semibold text-slate-800">Su objetivo principal es:</p>
+                <p class="text-slate-600 text-lg">predecir la siguiente palabra más probable en una frase.</p>
+            </div>
+            
+            <div class="bg-yellow-50 p-6 rounded-xl border border-yellow-200">
+                <p class="font-bold text-yellow-800 mb-3 text-sm uppercase tracking-wider">Ejemplo:</p>
+                <p class="text-slate-700 mb-2">Si escribimos:</p>
+                <blockquote class="text-xl font-serif italic text-slate-800 bg-white p-3 rounded shadow-sm inline-block mb-4">"El cielo es..."</blockquote>
+                <p class="text-slate-700 mb-2">La IA calcula probabilidades:</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">azul</span>
+                    <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full">gris</span>
+                    <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full">hermoso</span>
+                    <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full">infinito</span>
+                </div>
+                <p class="text-slate-700">Luego selecciona la palabra con mayor probabilidad.</p>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <p class="text-slate-600 mb-1">Por eso muchas personas explican la IA de esta forma:</p>
+                <p class="text-xl font-bold text-slate-800">Es como el autocompletar del celular… pero millones de veces más avanzado.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 3 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 3
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El cerebro de la IA: Redes Neuronales</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                Los LLM funcionan gracias a algo llamado <strong>redes neuronales artificiales</strong>.
+            </p>
+            <p class="text-lg text-slate-700 mb-6">
+                Podemos imaginarlo como:<br>
+                <span class="font-semibold text-blue-600">una red gigantesca de cálculos matemáticos conectados entre sí.</span>
+            </p>
+            <p class="text-lg text-slate-700 mb-4">
+                Cada conexión tiene un <em>peso o ajuste</em> que se modifica durante el entrenamiento.
+            </p>
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 mb-6">
+                <p class="font-semibold text-slate-800 mb-2">Durante ese entrenamiento la IA analizó enormes cantidades de información como:</p>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="bg-white shadow-sm px-4 py-2 rounded-lg text-slate-600 border border-slate-200">libros</li>
+                    <li class="bg-white shadow-sm px-4 py-2 rounded-lg text-slate-600 border border-slate-200">artículos</li>
+                    <li class="bg-white shadow-sm px-4 py-2 rounded-lg text-slate-600 border border-slate-200">páginas web</li>
+                    <li class="bg-white shadow-sm px-4 py-2 rounded-lg text-slate-600 border border-slate-200">código</li>
+                    <li class="bg-white shadow-sm px-4 py-2 rounded-lg text-slate-600 border border-slate-200">documentos</li>
+                </ul>
+            </div>
+            <p class="text-lg text-slate-700 mb-6 font-medium text-center">
+                El modelo aprende patrones en el lenguaje.
+            </p>
+            
+            <!-- Warning Box -->
+            <div class="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-xl">
+                <p class="font-bold text-red-800 mb-2">Es importante entender algo clave:</p>
+                <p class="text-xl text-red-700 font-black mb-2">⚠️ La IA no entiende el mundo como un humano.</p>
+                <p class="text-red-900">No tiene conciencia ni conocimiento real.</p>
+                <p class="text-red-900">Lo que hace es detectar patrones estadísticos en los datos.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 4 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-teal-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-teal-50 text-teal-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 4
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El idioma de la IA: Tokens</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                Las IAs no leen texto como los humanos.<br>
+                Primero convierten todo en <strong>tokens</strong>.
+            </p>
+            <p class="text-lg text-slate-700 mb-4 bg-teal-50 p-4 rounded-lg inline-block">
+                Un token es una pequeña pieza de información. Puede ser:
+                <span class="block mt-2 font-semibold text-teal-800">una palabra, parte de una palabra, o un símbolo.</span>
+            </p>
+
+            <div class="bg-slate-800 text-white p-6 rounded-xl shadow-inner my-6">
+                <p class="text-teal-400 font-bold text-sm uppercase tracking-wider mb-2">Ejemplo:</p>
+                <p class="mb-2 text-slate-300">La palabra:</p>
+                <p class="text-2xl font-bold mb-4">Fotografía</p>
+                <p class="mb-2 text-slate-300">Podría dividirse en tokens como:</p>
+                <div class="flex gap-2 text-xl font-mono bg-slate-900 p-3 rounded-lg inline-flex border border-slate-700">
+                    <span class="text-pink-400">foto</span>
+                    <span class="text-slate-500">—</span>
+                    <span class="text-yellow-400">graf</span>
+                    <span class="text-slate-500">—</span>
+                    <span class="text-cyan-400">ía</span>
+                </div>
+            </div>
+
+            <h3 class="font-bold text-slate-800 mt-8 mb-4 text-xl border-b pb-2">Esto es importante por dos razones:</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl">
+                    <h4 class="font-bold text-teal-700 mb-2 flex items-center text-lg">
+                        <span class="text-2xl mr-2">🧠</span> Memoria
+                    </h4>
+                    <p class="text-slate-600 text-sm mb-2">Los modelos tienen un límite de tokens que pueden recordar en una conversación.</p>
+                    <p class="text-slate-600 text-sm">Si la conversación es muy larga, la IA empieza a olvidar el inicio del diálogo.</p>
+                </div>
+                <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl">
+                    <h4 class="font-bold text-teal-700 mb-2 flex items-center text-lg">
+                        <span class="text-2xl mr-2">💰</span> Costo computacional
+                    </h4>
+                    <p class="text-slate-600 text-sm mb-2">Más tokens significan:</p>
+                    <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                        <li>más procesamiento</li>
+                        <li>más tiempo</li>
+                        <li>mayor costo para las empresas que operan la IA.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 5 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 5
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Tamaños de modelos de IA</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                No todas las IAs tienen la misma capacidad.<br>
+                Los modelos se diferencian principalmente por su <strong>número de parámetros</strong>.
+            </p>
+            <p class="text-lg text-slate-700 mb-8 bg-indigo-50 p-4 rounded-lg">
+                Los parámetros son básicamente las <em>conexiones del cerebro artificial</em>.
+            </p>
+
+            <h3 class="font-bold text-slate-800 mb-6 text-xl text-center">Podemos pensar en tres niveles principales:</h3>
+            
+            <div class="space-y-6">
+                <!-- Modelo Pequeño -->
+                <div class="flex flex-col md:flex-row bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-green-500 md:w-4 flex-shrink-0"></div>
+                    <div class="p-5 flex-grow">
+                        <h4 class="font-bold text-lg text-slate-900">Modelos pequeños</h4>
+                        <ul class="flex gap-4 mt-2 text-sm text-slate-600">
+                            <li class="flex items-center">⚡ rápidos</li>
+                            <li class="flex items-center">💸 baratos</li>
+                            <li class="flex items-center">✅ buenos para tareas simples</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-5 border-t md:border-t-0 md:border-l border-slate-200 md:w-1/3 flex flex-col justify-center">
+                        <span class="text-xs text-slate-500 uppercase tracking-wide font-bold mb-1">Analogía:</span>
+                        <span class="font-medium text-slate-800">un asistente junior.</span>
+                    </div>
+                </div>
+
+                <!-- Modelo Mediano -->
+                <div class="flex flex-col md:flex-row bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-blue-500 md:w-4 flex-shrink-0"></div>
+                    <div class="p-5 flex-grow">
+                        <h4 class="font-bold text-lg text-slate-900">Modelos medianos</h4>
+                        <ul class="flex flex-col gap-1 mt-2 text-sm text-slate-600">
+                            <li class="flex items-center">⚖️ equilibran velocidad y capacidad</li>
+                            <li class="flex items-center">⚙️ manejan tareas más complejas</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-5 border-t md:border-t-0 md:border-l border-slate-200 md:w-1/3 flex flex-col justify-center">
+                        <span class="text-xs text-slate-500 uppercase tracking-wide font-bold mb-1">Analogía:</span>
+                        <span class="font-medium text-slate-800">un profesional experimentado.</span>
+                    </div>
+                </div>
+
+                <!-- Modelo Grande -->
+                <div class="flex flex-col md:flex-row bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-purple-600 md:w-4 flex-shrink-0"></div>
+                    <div class="p-5 flex-grow">
+                        <h4 class="font-bold text-lg text-slate-900">Modelos grandes</h4>
+                        <ul class="flex flex-col gap-1 mt-2 text-sm text-slate-600">
+                            <li class="flex items-center">🐢 más lentos</li>
+                            <li class="flex items-center">💎 más costosos</li>
+                            <li class="flex items-center">🔬 mejor razonamiento y análisis profundo</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-5 border-t md:border-t-0 md:border-l border-slate-200 md:w-1/3 flex flex-col justify-center">
+                        <span class="text-xs text-slate-500 uppercase tracking-wide font-bold mb-1">Analogía:</span>
+                        <span class="font-medium text-slate-800">un científico que analiza un problema paso a paso.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 6 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-orange-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-orange-50 text-orange-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 6
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El mayor problema de la IA: las alucinaciones</h2>
+            <p class="text-lg text-slate-700 mb-4">
+                Uno de los riesgos más importantes es algo llamado:
+            </p>
+            <div class="text-center my-6">
+                <span class="text-3xl font-black text-orange-600 border-b-4 border-orange-200 pb-1 inline-block">Alucinación de IA</span>
+            </div>
+            <p class="text-lg text-slate-700 mb-6 text-center">
+                Esto ocurre cuando la IA inventa información.
+            </p>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-6">
+                <h3 class="font-bold text-slate-800 mb-2">¿Por qué sucede?</h3>
+                <p class="text-slate-700">Porque el modelo intenta completar una frase de forma coherente, incluso cuando no tiene información real.</p>
+            </div>
+
+            <div class="border-l-4 border-slate-300 pl-6 my-6">
+                <p class="font-bold text-slate-500 text-sm uppercase mb-2">Ejemplo:</p>
+                <p class="text-slate-700 mb-2">Si le preguntas por un estudio científico inexistente, la IA podría:</p>
+                <ul class="list-disc pl-5 text-slate-600 space-y-1 mb-2">
+                    <li>inventar el nombre del estudio</li>
+                    <li>inventar autores</li>
+                    <li>inventar fechas</li>
+                </ul>
+                <p class="text-slate-800 font-medium">Y responder con total seguridad.</p>
+            </div>
+
+            <div class="bg-orange-100 text-orange-900 p-5 rounded-xl text-center shadow-inner mt-8">
+                <p class="mb-1 text-orange-800 font-medium">Por eso es importante entender:</p>
+                <p class="text-2xl font-bold">La IA optimiza coherencia, no verdad.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 7 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 7
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Cómo se intenta solucionar esto</h2>
+            <p class="text-lg text-slate-700 mb-6">
+                Una técnica moderna para mejorar la precisión es:
+            </p>
+            
+            <div class="text-center mb-8">
+                <span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
+                    RAG
+                </span>
+                <span class="block text-sm font-bold text-slate-500 mt-1 tracking-wider uppercase">
+                    (Retrieval Augmented Generation)
+                </span>
+            </div>
+
+            <div class="bg-cyan-50 p-6 rounded-xl border border-cyan-100 mb-8">
+                <p class="font-bold text-cyan-900 mb-4 text-lg">Este método funciona así:</p>
+                <ol class="space-y-4">
+                    <li class="flex">
+                        <span class="bg-cyan-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 shadow-sm">1</span>
+                        <span class="text-slate-700 text-lg pt-1">La IA recibe una pregunta</span>
+                    </li>
+                    <li class="flex">
+                        <span class="bg-cyan-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 shadow-sm">2</span>
+                        <span class="text-slate-700 text-lg pt-1">Busca información en bases de datos o documentos</span>
+                    </li>
+                    <li class="flex">
+                        <span class="bg-cyan-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 shadow-sm">3</span>
+                        <span class="text-slate-700 text-lg pt-1">Usa esa información para construir la respuesta</span>
+                    </li>
+                </ol>
+            </div>
+
+            <p class="text-lg text-slate-700 mb-6 text-center italic">
+                En lugar de confiar solo en su memoria, el modelo puede consultar información externa.
+            </p>
+
+            <div class="border-t pt-6">
+                <p class="font-semibold text-slate-800 mb-3">Esto es especialmente útil para:</p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-medium">🏢 empresas</span>
+                    <span class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-medium">📚 bases de conocimiento internas</span>
+                    <span class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-medium">📄 documentación técnica.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 8 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-fuchsia-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-fuchsia-50 text-fuchsia-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 8
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Algo muy importante: cómo le hablamos a la IA</h2>
+            <p class="text-lg text-slate-700 mb-6">
+                La calidad de la respuesta depende mucho de cómo hacemos la pregunta. Esto se conoce como:
+            </p>
+            
+            <div class="text-center mb-8">
+                <span class="inline-block bg-fuchsia-600 text-white text-2xl font-bold px-6 py-3 rounded-xl shadow-md">
+                    Prompt Engineering
+                </span>
+                <p class="text-slate-600 mt-3 font-medium">
+                    Un prompt es simplemente la instrucción que le damos a la IA.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <p class="font-bold text-slate-500 text-sm uppercase mb-4 tracking-wider">Ejemplo Comparativo:</p>
+                
+                <div class="mb-6">
+                    <p class="text-red-600 font-bold flex items-center mb-2">
+                        <span class="mr-2">❌</span> Pregunta básica:
+                    </p>
+                    <div class="bg-white border border-slate-300 p-4 rounded-lg shadow-sm text-slate-700 font-mono text-sm">
+                        Haz un reporte sobre el mercado.
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-green-600 font-bold flex items-center mb-2">
+                        <span class="mr-2">✅</span> Pregunta mejor:
+                    </p>
+                    <div class="bg-white border-2 border-green-400 p-4 rounded-lg shadow-sm text-slate-800 font-mono text-sm leading-relaxed">
+                        Actúa como analista de mercado y crea un reporte con las tres principales tendencias del sector tecnológico en los próximos cinco años.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center bg-fuchsia-50 py-4 rounded-lg">
+                <p class="text-xl font-bold text-fuchsia-900">Una mejor instrucción genera mejores resultados.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 9 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-rose-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-rose-50 text-rose-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 9
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La nueva generación de IA</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                La inteligencia artificial está evolucionando rápidamente hacia nuevas capacidades.<br>
+                <span class="font-semibold">Tres tendencias importantes son:</span>
+            </p>
+
+            <div class="space-y-8">
+                <!-- Tendencia 1 -->
+                <div>
+                    <h3 class="text-xl font-bold text-rose-600 mb-2 border-b border-rose-100 pb-1">1. IA Multimodal</h3>
+                    <p class="text-slate-700 mb-3">Los modelos modernos pueden trabajar con:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded border border-slate-200">📝 texto</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded border border-slate-200">🖼️ imágenes</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded border border-slate-200">🔊 audio</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded border border-slate-200">🎥 video</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded border border-slate-200">💻 código</span>
+                    </div>
+                </div>
+
+                <!-- Tendencia 2 -->
+                <div>
+                    <h3 class="text-xl font-bold text-rose-600 mb-2 border-b border-rose-100 pb-1">2. IA Agéntica</h3>
+                    <p class="text-slate-700 mb-3">En lugar de solo responder preguntas, la IA puede realizar tareas completas.</p>
+                    <div class="bg-rose-50 p-4 rounded-lg">
+                        <p class="font-bold text-rose-800 text-sm mb-2">Ejemplo:</p>
+                        <ul class="list-disc pl-5 text-slate-700 space-y-1">
+                            <li>investigar información</li>
+                            <li>escribir documentos</li>
+                            <li>analizar datos</li>
+                            <li>ejecutar procesos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tendencia 3 -->
+                <div>
+                    <h3 class="text-xl font-bold text-rose-600 mb-2 border-b border-rose-100 pb-1">3. Humanos digitales</h3>
+                    <p class="text-slate-700 mb-3">Están apareciendo avatares impulsados por IA capaces de:</p>
+                    <ul class="list-disc pl-5 text-slate-700 space-y-1 mb-4">
+                        <li>hablar</li>
+                        <li>expresarse</li>
+                        <li>interactuar con personas en tiempo real</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-slate-600">Esto ya se está usando en:</p>
+                    <div class="flex gap-3 mt-2">
+                        <span class="text-rose-700 font-medium">🎧 soporte al cliente</span>
+                        <span class="text-rose-700 font-medium">🎓 educación</span>
+                        <span class="text-rose-700 font-medium">💼 ventas.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 10 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-pink-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-pink-50 text-pink-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 10
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Cómo la IA afecta nuestra atención</h2>
+            <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                Muchas plataformas digitales utilizan IA para optimizar algo muy específico:<br>
+                <span class="text-xl font-bold text-pink-600 block mt-2 bg-pink-50 p-3 rounded-lg text-center">
+                    mantener nuestra atención el mayor tiempo posible.
+                </span>
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 items-center bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <div class="w-full md:w-1/3">
+                    <p class="font-semibold text-slate-800 mb-3">Plataformas como:</p>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-black text-white text-center py-2 rounded font-bold shadow-sm">TikTok</div>
+                        <div class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 text-white text-center py-2 rounded font-bold shadow-sm">Instagram</div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <p class="text-slate-700 mb-2">utilizan algoritmos que aprenden:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center text-slate-800 bg-white p-2 rounded shadow-sm">
+                            <span class="mr-3 text-xl">😂</span> qué nos hace reír
+                        </li>
+                        <li class="flex items-center text-slate-800 bg-white p-2 rounded shadow-sm">
+                            <span class="mr-3 text-xl">😠</span> qué nos molesta
+                        </li>
+                        <li class="flex items-center text-slate-800 bg-white p-2 rounded shadow-sm">
+                            <span class="mr-3 text-xl">🤩</span> qué nos interesa
+                        </li>
+                    </ul>
+                    <p class="font-bold text-pink-700 text-center border-t border-slate-200 pt-3">
+                        y ajustan el contenido para mantenernos conectados.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 11 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-red-600 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-red-50 text-red-600 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 11
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Riesgos importantes de la IA</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                Aunque la IA es muy poderosa, también tiene riesgos.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Sesgos -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl hover:bg-red-50 transition-colors">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center">
+                        <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">1</span>
+                        Sesgos
+                    </h3>
+                    <p class="text-slate-700 text-sm mb-2">La IA aprende de datos humanos.</p>
+                    <p class="text-slate-700 text-sm font-medium">Si los datos tienen prejuicios, la IA puede replicarlos.</p>
+                </div>
+
+                <!-- Privacidad -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl hover:bg-red-50 transition-colors">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center">
+                        <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">2</span>
+                        Privacidad
+                    </h3>
+                    <p class="text-slate-700 text-sm mb-2">Nunca se deben introducir en una IA pública:</p>
+                    <ul class="list-disc pl-4 text-xs text-slate-600 space-y-1">
+                        <li>datos confidenciales</li>
+                        <li>secretos empresariales</li>
+                        <li>información sensible de clientes.</li>
+                    </ul>
+                </div>
+
+                <!-- Dependencia -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl hover:bg-red-50 transition-colors">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center">
+                        <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center mr-2">3</span>
+                        Dependencia
+                    </h3>
+                    <p class="text-slate-700 text-sm mb-2">La IA debe ser una herramienta, no un reemplazo del pensamiento.</p>
+                    <p class="text-slate-700 text-sm font-medium">La creatividad, criterio y experiencia humana siguen siendo fundamentales.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 12 -->
+        <article class="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white relative text-center">
+            <div class="absolute top-0 right-0 bg-white/10 text-white/80 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest backdrop-blur-sm">
+                Diapositiva 12
+            </div>
+            
+            <h2 class="text-3xl font-black mb-6 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-purple-200">
+                Conclusión
+            </h2>
+            
+            <p class="text-xl text-indigo-100 mb-8 font-light">
+                La inteligencia artificial no es magia.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-10 max-w-2xl mx-auto">
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
+                    <p class="font-semibold text-white mb-3 text-lg">Es una tecnología basada en:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="text-purple-300 mr-2">▸</span> matemáticas</li>
+                        <li class="flex items-center"><span class="text-purple-300 mr-2">▸</span> datos</li>
+                        <li class="flex items-center"><span class="text-purple-300 mr-2">▸</span> probabilidad</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
+                    <p class="font-semibold text-white mb-3 text-lg">Pero usada correctamente puede:</p>
+                    <ul class="space-y-2 text-indigo-50">
+                        <li class="flex items-center"><span class="text-indigo-300 mr-2">✓</span> aumentar la productividad</li>
+                        <li class="flex items-center"><span class="text-indigo-300 mr-2">✓</span> mejorar la toma de decisiones</li>
+                        <li class="flex items-center"><span class="text-indigo-300 mr-2">✓</span> acelerar procesos de trabajo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white text-indigo-900 p-6 rounded-xl inline-block shadow-lg mx-auto transform hover:scale-105 transition-transform">
+                <p class="text-lg font-semibold mb-1 opacity-80">La clave no es solo usar IA.</p>
+                <p class="text-2xl font-black">La clave es entenderla para usarla mejor que los demás.</p>
+            </div>
+        </article>
+
+        <!-- Espaciador final para poder hacer scroll cómodo hasta abajo -->
+        <div class="h-10"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-4 py-6 text-center border-t border-slate-200">
+        <p class="text-slate-500 text-sm">
+            Elaborado por <span class="font-bold text-slate-700">Arcalight</span> | Marzo 2026
+        </p>
+    </footer>
+
+    <!-- Script para la barra de progreso de lectura -->
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
