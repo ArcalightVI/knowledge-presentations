@@ -12,8 +12,7 @@ Sometimes it is different to ask *"what is something"* than to understand **the 
 
 ## Available Presentations
 
-* Introduction to Artificial Intelligence
-  https://arcalightvi.github.io/knowledge-presentations/ai-introduction.html
+- [Introduction to Artificial Intelligence](https://arcalightvi.github.io/knowledge-presentations/ai-introduction.html)
 
 *(More presentations will be added over time.)*
 
