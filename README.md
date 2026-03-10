@@ -12,6 +12,7 @@ Sometimes it is different to ask *"what is something"* than to understand **the 
 
 ## Available Presentations
 
+### AI – Artificial Intelligence
 - [Introduction to Artificial Intelligence](https://arcalightvi.github.io/knowledge-presentations/ai-introduction.html)
 - [Prompt Engineering](https://arcalightvi.github.io/knowledge-presentations/prompt-engineering.html)
 - [Risk and Security - AI](https://arcalightvi.github.io/knowledge-presentations/ai-risk-security.html)
