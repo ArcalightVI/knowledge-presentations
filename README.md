@@ -17,6 +17,15 @@ Sometimes it is different to ask *"what is something"* than to understand **the 
 - [Prompt Engineering](https://arcalightvi.github.io/knowledge-presentations/prompt-engineering.html)
 - [Risk and Security - AI](https://arcalightvi.github.io/knowledge-presentations/ai-risk-security.html)
 
+### Digital Marketing
+- [Digital Marketing](https://arcalightvi.github.io/knowledge-presentations/digital-marketing.html)
+- [How Digital Marketing Works](https://arcalightvi.github.io/knowledge-presentations/how-digital-marketing-works.html)
+- [Digital Media Architecture](https://arcalightvi.github.io/knowledge-presentations/digital-media-architecture.html)
+- [Digital Media Strategy](https://arcalightvi.github.io/knowledge-presentations/digital-media-strategy.html)
+- [Digital Media Psycology](https://arcalightvi.github.io/knowledge-presentations/digital-media-psycology.html)
+- [Digital Marketing Getting Started](https://arcalightvi.github.io/knowledge-presentations/digital-marketing-getting-started.html)
+- [Digital Marketing AI Support](https://arcalightvi.github.io/knowledge-presentations/digital-marketing-ai-support.html)
+
 *(More presentations will be added over time.)*
 
 ## Topics
@@ -24,6 +33,7 @@ Sometimes it is different to ask *"what is something"* than to understand **the 
 This repository is not limited to a single area. Over time it may include topics such as:
 
 * Artificial Intelligence
+* Digital Marketing
 * Cybersecurity
 * ...
 
