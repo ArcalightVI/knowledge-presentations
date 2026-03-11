@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La arquitectura oculta del Marketing Digital</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una lectura limpia y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Barra de progreso de lectura - Paleta Tech/Estructura (Cyan a Índigo) */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(to right, #06b6d4, #4f46e5);
+            z-index: 50;
+            width: 0%;
+            transition: width 0.1s;
+        }
+        /* Decoración de fondo */
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-800 antialiased" id="inicio">
+
+    <!-- Barra de progreso -->
+    <div id="progress-bar"></div>
+
+    <!-- Cabecera / Hero con Navegación -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 bg-opacity-90 backdrop-blur-md">
+        <!-- Menú de Navegación -->
+        <nav class="border-b border-slate-100 px-4 py-3">
+             <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="https://arcalightvi.github.io/knowledge-presentations/" class="hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing.html" class="hover:text-blue-600 transition-colors">Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/how-digital-marketing-works.html" class="hover:text-blue-600 transition-colors">Cómo funciona el Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-architecture.html" class="hover:text-blue-600 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1">Arquitectura oculta del Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-strategy.html" class="hover:text-blue-600 transition-colors">La estrategia detrás del Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-psycology.html" class="hover:text-blue-600 transition-colors">La psicología del Marketing</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-getting-started.html" class="hover:text-blue-600 transition-colors">Cómo empezar en Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-ai-support.html" class="hover:text-blue-600 transition-colors">⭐ Bonus: IA como apoyo en Marketing Digital</a>
+            </div>
+        </nav>
+        
+        <div class="max-w-4xl mx-auto px-6 py-4 text-center">
+            <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Presentación</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-indigo-600 pb-1">
+                La arquitectura oculta del Marketing Digital
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Diapositiva 1 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 1
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Internet no es neutral</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Cuando usamos internet parece un espacio libre donde simplemente vemos contenido.<br>
+                <strong class="text-cyan-700">Pero en realidad cada plataforma está diseñada con objetivos muy claros.</strong>
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4">Las empresas tecnológicas construyen sus productos para optimizar principalmente tres cosas:</p>
+            
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm text-center">
+                    <span class="block bg-cyan-100 text-cyan-800 w-10 h-10 rounded-full mx-auto flex items-center justify-center font-black text-lg mb-2">1</span>
+                    <span class="font-medium text-slate-700">captar atención</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm text-center">
+                    <span class="block bg-cyan-100 text-cyan-800 w-10 h-10 rounded-full mx-auto flex items-center justify-center font-black text-lg mb-2">2</span>
+                    <span class="font-medium text-slate-700">mantener a las personas dentro de la plataforma</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm text-center">
+                    <span class="block bg-cyan-100 text-cyan-800 w-10 h-10 rounded-full mx-auto flex items-center justify-center font-black text-lg mb-2">3</span>
+                    <span class="font-medium text-slate-700">convertir esa atención en ingresos</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 text-white p-5 rounded-xl text-center shadow-md">
+                <p class="mb-1 text-slate-300">Por eso muchas decisiones de diseño no son accidentales.</p>
+                <p class="text-xl font-bold text-cyan-400">Forman parte de una arquitectura estratégica.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 2 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 2
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El modelo económico de internet</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center">
+                La mayoría de plataformas digitales utilizan un modelo conocido como:<br>
+                <span class="inline-block mt-2 bg-indigo-50 text-indigo-800 border border-indigo-200 px-4 py-2 rounded-lg font-bold">economía de publicidad basada en datos.</span>
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4">Esto significa que el negocio principal consiste en:</p>
+
+            <div class="space-y-3 mb-8">
+                <div class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                    <span class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center mr-4 font-bold flex-shrink-0">1</span>
+                    <span class="text-slate-700 font-medium">atraer usuarios</span>
+                </div>
+                <div class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                    <span class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center mr-4 font-bold flex-shrink-0">2</span>
+                    <span class="text-slate-700 font-medium">recoger información sobre su comportamiento</span>
+                </div>
+                <div class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                    <span class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center mr-4 font-bold flex-shrink-0">3</span>
+                    <span class="text-slate-700 font-medium">utilizar esos datos para mostrar publicidad altamente segmentada</span>
+                </div>
+            </div>
+
+            <div class="bg-indigo-900 text-white p-6 rounded-xl text-center">
+                <p class="text-indigo-200 mb-3 font-bold uppercase tracking-wide text-sm">Mientras más tiempo pasa una persona en una plataforma:</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 text-lg font-bold">
+                    <span>más datos genera</span>
+                    <span class="hidden md:inline text-indigo-400">→</span>
+                    <span>más anuncios puede ver</span>
+                    <span class="hidden md:inline text-indigo-400">→</span>
+                    <span class="text-cyan-300">más ingresos produce.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 3 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-slate-700 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-slate-100 text-slate-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 3
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">El producto real</h2>
+            
+            <p class="text-slate-600 font-bold uppercase tracking-widest text-xs mb-2">Existe una frase famosa en el mundo tecnológico:</p>
+            <blockquote class="text-2xl md:text-3xl font-black text-slate-800 bg-slate-100 p-6 rounded-xl border-l-8 border-cyan-500 mb-6 shadow-sm">
+                “Si un servicio es gratis, el producto eres tú.”
+            </blockquote>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-4 border border-slate-200 rounded-lg shadow-sm">
+                    <p class="text-red-600 font-bold mb-1">❌ Esto no significa</p>
+                    <p class="text-slate-700">que las plataformas vendan a las personas.</p>
+                </div>
+                <div class="bg-cyan-50 p-4 border border-cyan-200 rounded-lg shadow-sm">
+                    <p class="text-cyan-700 font-bold mb-1">✅ Significa que</p>
+                    <p class="text-slate-800 font-medium">venden acceso a la atención de esas personas.</p>
+                </div>
+            </div>
+
+            <p class="text-slate-700 mb-4 font-medium text-center">
+                Las empresas pagan para que sus anuncios aparezcan frente a audiencias específicas.
+            </p>
+            
+            <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
+                <p class="text-sm font-bold text-slate-500 uppercase mb-3">Por ejemplo:</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="bg-white border border-slate-300 px-4 py-2 rounded-full font-bold text-slate-700 shadow-sm flex items-center"><span class="mr-2">✈️</span> personas interesadas en viajes</span>
+                    <span class="bg-white border border-slate-300 px-4 py-2 rounded-full font-bold text-slate-700 shadow-sm flex items-center"><span class="mr-2">🚗</span> personas que buscan comprar un auto</span>
+                    <span class="bg-white border border-slate-300 px-4 py-2 rounded-full font-bold text-slate-700 shadow-sm flex items-center"><span class="mr-2">💍</span> personas que planean una boda</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 4 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-fuchsia-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-fuchsia-50 text-fuchsia-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 4
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Ingeniería de comportamiento</h2>
+            
+            <p class="text-lg text-slate-700 mb-4">
+                Muchas plataformas utilizan principios de psicología del comportamiento para diseñar sus sistemas.
+            </p>
+            
+            <div class="text-center mb-6">
+                <p class="text-slate-500 text-sm font-bold uppercase tracking-widest mb-1">Esto se conoce como:</p>
+                <div class="inline-block bg-fuchsia-600 text-white px-6 py-3 rounded-xl shadow-lg">
+                    <p class="text-2xl font-black uppercase tracking-wide">Behavioral Design</p>
+                    <p class="text-fuchsia-200 text-sm">(Diseño conductual)</p>
+                </div>
+            </div>
+
+            <p class="text-center text-slate-800 font-medium mb-6 bg-fuchsia-50 py-3 rounded-lg border border-fuchsia-100">
+                El objetivo es facilitar ciertas acciones y fomentar ciertos hábitos.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-6">
+                <p class="font-bold text-slate-800 mb-4">Ejemplos:</p>
+                <div class="space-y-3">
+                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                        <span class="text-fuchsia-500 mr-3 text-xl">👇</span>
+                        <span class="text-slate-700 font-medium">deslizar hacia abajo para actualizar contenido</span>
+                    </div>
+                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                        <span class="text-fuchsia-500 mr-3 text-xl">🔴</span>
+                        <span class="text-slate-700 font-medium">notificaciones que llaman la atención</span>
+                    </div>
+                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                        <span class="text-fuchsia-500 mr-3 text-xl">❤️</span>
+                        <span class="text-slate-700 font-medium">recompensas sociales como “me gusta”</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center font-bold text-fuchsia-800">
+                Estos elementos están diseñados para mantener la interacción constante.
+            </p>
+        </article>
+
+        <!-- Diapositiva 5 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 5
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Diseño para la retención</h2>
+            
+            <p class="text-lg text-slate-700 mb-4">
+                Una de las métricas más importantes para las plataformas es la <strong class="text-blue-600">retención</strong>.
+            </p>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-8 shadow-sm">
+                <p class="text-sm font-bold text-blue-800 uppercase tracking-wider mb-1">Retención significa:</p>
+                <p class="text-lg text-slate-800 font-medium">cuánto tiempo una persona permanece usando un producto.</p>
+            </div>
+
+            <p class="font-bold text-slate-800 mb-4">Para mejorarla se utilizan diferentes estrategias como:</p>
+            
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 text-blue-500">📜</span>
+                    <span class="text-sm font-bold text-slate-700">contenido infinito (scroll infinito)</span>
+                </div>
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 text-blue-500">🤖</span>
+                    <span class="text-sm font-bold text-slate-700">recomendaciones automáticas</span>
+                </div>
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 text-blue-500">🔔</span>
+                    <span class="text-sm font-bold text-slate-700">notificaciones personalizadas</span>
+                </div>
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 text-blue-500">🔗</span>
+                    <span class="text-sm font-bold text-slate-700">sugerencias de contenido relacionado</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-4 rounded-lg text-center font-bold">
+                Esto crea una experiencia donde siempre hay algo nuevo que ver.
+            </div>
+        </article>
+
+        <!-- Diapositiva 6 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-orange-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-orange-50 text-orange-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 6
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El efecto viral</h2>
+            
+            <p class="text-lg text-slate-700 mb-2">Algunos contenidos se difunden extremadamente rápido.</p>
+            <p class="text-slate-700 mb-6">Esto ocurre cuando muchas personas comienzan a compartir algo al mismo tiempo.</p>
+
+            <div class="text-center mb-8">
+                <span class="inline-block bg-orange-100 text-orange-800 text-xl font-black px-6 py-2 rounded-full border border-orange-300 shadow-sm">
+                    A esto se le llama viralidad.
+                </span>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-slate-800 mb-4 text-center">Generalmente los contenidos virales tienen características como:</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded shadow-sm text-slate-700 font-medium">emociones intensas</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded shadow-sm text-slate-700 font-medium">sorpresa</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded shadow-sm text-slate-700 font-medium">humor</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded shadow-sm text-slate-700 font-medium">controversia</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded shadow-sm text-slate-700 font-medium">identificación social</span>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-bold text-orange-700 bg-orange-50 py-3 rounded-lg border border-orange-200">
+                Cuando un contenido genera muchas interacciones rápidamente, los algoritmos lo amplifican aún más.
+            </p>
+        </article>
+
+        <!-- Diapositiva 7 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-emerald-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 7
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La ingeniería del contenido</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Muchos creadores de contenido utilizan estructuras muy específicas para aumentar el impacto de sus publicaciones.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">Por ejemplo:</p>
+                <div class="grid md:grid-cols-4 gap-3 text-center">
+                    <div class="bg-emerald-600 text-white p-4 rounded-lg shadow-md">
+                        <span class="block text-2xl mb-1">🎣</span>
+                        <span class="text-sm font-bold">captar atención en los primeros segundos</span>
+                    </div>
+                    <div class="bg-emerald-500 text-white p-4 rounded-lg shadow-md">
+                        <span class="block text-2xl mb-1">❓</span>
+                        <span class="text-sm font-bold">plantear una pregunta o problema</span>
+                    </div>
+                    <div class="bg-emerald-400 text-white p-4 rounded-lg shadow-md">
+                        <span class="block text-2xl mb-1">🤔</span>
+                        <span class="text-sm font-bold">mantener curiosidad</span>
+                    </div>
+                    <div class="bg-emerald-300 text-emerald-900 p-4 rounded-lg shadow-md">
+                        <span class="block text-2xl mb-1">🎁</span>
+                        <span class="text-sm font-bold">entregar una recompensa o solución</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center font-bold text-slate-800 mb-3 border-b pb-2">Este tipo de estructura narrativa está diseñada para maximizar:</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-slate-100 px-4 py-2 rounded-full font-bold text-slate-700 border border-slate-200 shadow-sm">tiempo de visualización</span>
+                <span class="bg-slate-100 px-4 py-2 rounded-full font-bold text-slate-700 border border-slate-200 shadow-sm">interacción</span>
+                <span class="bg-slate-100 px-4 py-2 rounded-full font-bold text-slate-700 border border-slate-200 shadow-sm">compartidos</span>
+            </div>
+        </article>
+
+        <!-- Diapositiva 8 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-teal-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-teal-50 text-teal-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 8
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Microsegmentación</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Una de las herramientas más poderosas del marketing digital es la capacidad de segmentar audiencias.
+            </p>
+
+            <div class="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-r-xl mb-6 shadow-sm">
+                <p class="text-slate-800 font-medium">
+                    En lugar de mostrar el mismo anuncio a todo el mundo, las plataformas permiten dirigir mensajes a grupos muy específicos.
+                </p>
+            </div>
+
+            <div class="bg-white border-2 border-slate-100 p-6 rounded-xl shadow-sm mb-6 max-w-lg mx-auto relative overflow-hidden">
+                <div class="absolute right-0 top-0 text-6xl opacity-10">🎯</div>
+                <p class="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">Por ejemplo:</p>
+                <ul class="space-y-2 text-slate-700 font-medium">
+                    <li class="flex items-center"><span class="text-teal-500 mr-2 text-xl">👤</span> personas entre 25 y 35 años</li>
+                    <li class="flex items-center"><span class="text-teal-500 mr-2 text-xl">⚽</span> interesadas en deporte</li>
+                    <li class="flex items-center"><span class="text-teal-500 mr-2 text-xl">📍</span> que viven en una ciudad determinada</li>
+                </ul>
+            </div>
+
+            <p class="text-center text-lg font-bold text-teal-800 bg-slate-100 py-3 rounded-lg">
+                Esto permite campañas mucho más eficientes que en medios tradicionales.
+            </p>
+        </article>
+
+        <!-- Diapositiva 9 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-red-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-red-50 text-red-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 9
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">El efecto burbuja</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center">
+                Cuando los algoritmos personalizan contenido, ocurre un fenómeno conocido como:
+            </p>
+            
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center bg-red-50 border-2 border-red-200 px-8 py-4 rounded-full shadow-inner">
+                    <span class="text-3xl mr-3">🌐</span>
+                    <span class="text-2xl md:text-3xl font-black text-red-600 uppercase tracking-wide">burbuja de información</span>
+                    <span class="text-3xl ml-3">🌐</span>
+                </div>
+            </div>
+
+            <p class="text-lg text-slate-800 font-medium mb-6 bg-slate-50 p-4 rounded-lg border-l-4 border-slate-300">
+                Las personas comienzan a ver principalmente contenido similar a lo que ya les gusta o con lo que interactúan.
+            </p>
+
+            <div class="bg-slate-800 text-white p-6 rounded-xl text-center shadow-lg">
+                <p class="font-bold text-lg">
+                    Esto puede crear entornos informativos muy cerrados donde ciertas ideas se refuerzan constantemente.
+                </p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 10 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-pink-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-pink-50 text-pink-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 10
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La economía de la influencia</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Con el crecimiento de redes sociales apareció una nueva figura en el marketing:<br>
+                <strong class="text-pink-600 bg-pink-50 px-2 rounded">los creadores de contenido o influencers.</strong>
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-slate-800 mb-4 text-center">Estos creadores construyen audiencias basadas en:</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="bg-white px-6 py-3 rounded-xl shadow-sm border-b-4 border-pink-400 text-center w-full md:w-auto">
+                        <span class="block text-2xl mb-1">🤝</span>
+                        <span class="font-bold text-slate-700">confianza</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-xl shadow-sm border-b-4 border-pink-400 text-center w-full md:w-auto">
+                        <span class="block text-2xl mb-1">🎭</span>
+                        <span class="font-bold text-slate-700">identidad</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-xl shadow-sm border-b-4 border-pink-400 text-center w-full md:w-auto">
+                        <span class="block text-2xl mb-1">👥</span>
+                        <span class="font-bold text-slate-700">comunidad</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-bold text-slate-800 bg-pink-50 py-4 px-6 rounded-lg border border-pink-100">
+                Las marcas colaboran con ellos porque sus recomendaciones suelen percibirse como más auténticas que la publicidad tradicional.
+            </p>
+        </article>
+
+        <!-- Diapositiva 11 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 11
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Plataformas y dependencia</h2>
+            
+            <p class="text-lg text-slate-700 mb-4">
+                Muchas empresas dependen completamente de plataformas digitales para llegar a sus clientes.
+            </p>
+            <p class="text-red-600 font-bold mb-6 flex items-center"><span class="mr-2">⚠️</span> Sin embargo, esto tiene un riesgo.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl shadow-sm text-center flex flex-col justify-center">
+                    <p class="font-bold text-slate-800 mb-3">Las plataformas pueden cambiar:</p>
+                    <ul class="text-slate-600 space-y-1 font-medium">
+                        <li>sus algoritmos</li>
+                        <li>sus reglas</li>
+                        <li>sus políticas de monetización</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-slate-500 italic">Cuando eso ocurre, los negocios que dependen totalmente de ellas pueden verse afectados.</p>
+                </div>
+                
+                <div class="bg-amber-50 border border-amber-200 p-5 rounded-xl shadow-sm text-center flex flex-col justify-center">
+                    <p class="font-bold text-amber-900 mb-3">Por eso muchas estrategias recomiendan construir también activos propios, como:</p>
+                    <div class="flex flex-col gap-2">
+                        <span class="bg-white border border-amber-100 px-3 py-2 rounded font-bold text-slate-800 shadow-sm">listas de correo</span>
+                        <span class="bg-white border border-amber-100 px-3 py-2 rounded font-bold text-slate-800 shadow-sm">sitios web</span>
+                        <span class="bg-white border border-amber-100 px-3 py-2 rounded font-bold text-slate-800 shadow-sm">comunidades</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 12 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-slate-800 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-slate-100 text-slate-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 12
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La batalla por la atención</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center bg-slate-50 py-4 rounded-lg">
+                En internet todas las marcas compiten por el mismo recurso limitado:<br>
+                <strong class="text-xl text-slate-900 mt-1 block">la atención humana.</strong>
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 items-center mb-8">
+                <div class="w-full md:w-1/2">
+                    <p class="font-bold text-slate-800 mb-3">Cada día las personas reciben:</p>
+                    <div class="grid grid-cols-2 gap-2 text-center text-sm font-medium">
+                        <span class="bg-white border border-slate-200 py-2 rounded shadow-sm">notificaciones</span>
+                        <span class="bg-white border border-slate-200 py-2 rounded shadow-sm">publicidad</span>
+                        <span class="bg-white border border-slate-200 py-2 rounded shadow-sm">contenido</span>
+                        <span class="bg-white border border-slate-200 py-2 rounded shadow-sm">mensajes</span>
+                    </div>
+                    <p class="mt-3 text-slate-600 font-medium italic">Esto crea un entorno donde captar atención es cada vez más difícil.</p>
+                </div>
+                
+                <div class="w-full md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold mb-4 text-cyan-300">Las marcas que logran destacar suelen hacerlo mediante:</p>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> creatividad</li>
+                        <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> valor real</li>
+                        <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> contenido útil</li>
+                        <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> autenticidad.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 13 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-600 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 13
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Entender el sistema</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Comprender cómo funciona la arquitectura del marketing digital permite ver internet de forma diferente.
+            </p>
+
+            <div class="bg-cyan-50 border border-cyan-200 p-6 rounded-xl mb-6 shadow-sm">
+                <p class="font-bold text-cyan-900 mb-4 text-center text-lg">Muchas experiencias digitales están cuidadosamente diseñadas para:</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white text-cyan-800 font-bold px-5 py-3 rounded-lg shadow-sm border border-cyan-100 flex items-center"><span class="text-2xl mr-2">🎯</span> influir en decisiones</span>
+                    <span class="bg-white text-cyan-800 font-bold px-5 py-3 rounded-lg shadow-sm border border-cyan-100 flex items-center"><span class="text-2xl mr-2">🔄</span> mantener interacción</span>
+                    <span class="bg-white text-cyan-800 font-bold px-5 py-3 rounded-lg shadow-sm border border-cyan-100 flex items-center"><span class="text-2xl mr-2">🧭</span> dirigir la atención</span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-slate-600 mb-2">Esto no es necesariamente negativo, pero es importante entenderlo.</p>
+                <p class="text-xl font-bold text-slate-800 bg-slate-100 inline-block px-6 py-2 rounded-full">
+                    El conocimiento permite usar estas herramientas con mayor conciencia.
+                </p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 14 -->
+        <article class="bg-gradient-to-br from-slate-900 to-cyan-950 rounded-2xl shadow-2xl p-8 md:p-12 text-white relative text-center">
+            <div class="absolute top-0 right-0 bg-white/10 text-white/80 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest backdrop-blur-sm">
+                Diapositiva 14
+            </div>
+            
+            <h2 class="text-3xl font-black mb-6 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-indigo-300">
+                Conclusión
+            </h2>
+            
+            <p class="text-xl text-cyan-100 mb-6 font-light">
+                El marketing digital moderno no es solo publicidad.
+            </p>
+
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 mb-8 max-w-2xl mx-auto text-left">
+                <p class="font-semibold text-white mb-4 text-lg text-center">Es parte de un sistema complejo donde interactúan:</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm font-medium text-cyan-50">
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">tecnología</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">economía</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">psicología</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">datos</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">comportamiento humano</span>
+                </div>
+            </div>
+
+            <div class="bg-cyan-900/50 border border-cyan-500/30 p-6 rounded-xl inline-block shadow-lg mx-auto w-full max-w-2xl">
+                <p class="text-sm uppercase tracking-widest text-cyan-300 font-bold mb-4">Las personas que entienden cómo funciona esta arquitectura tienen una ventaja importante:</p>
+                <ul class="text-left space-y-3 font-bold text-lg max-w-md mx-auto">
+                    <li class="flex items-center"><span class="text-indigo-400 mr-3 text-xl font-black">»</span> pueden crear mejores estrategias</li>
+                    <li class="flex items-center"><span class="text-indigo-400 mr-3 text-xl font-black">»</span> pueden tomar decisiones más informadas</li>
+                    <li class="flex items-center"><span class="text-indigo-400 mr-3 text-xl font-black">»</span> y pueden navegar el mundo digital con mayor claridad</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Espaciador final para poder hacer scroll cómodo hasta abajo -->
+        <div class="h-10"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-4 py-8 text-center border-t border-slate-200">
+        <!-- Botón Volver al Inicio -->
+        <div class="mb-6">
+            <a href="#inicio" class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full text-sm font-semibold transition-colors shadow-sm">
+                <span class="mr-2 text-lg leading-none">↑</span> Volver al comienzo
+            </a>
+        </div>
+        
+        <p class="text-slate-500 text-sm">
+            Elaborado por <span class="font-bold text-slate-700">ArcalightVI</span> | Marzo 2026
+        </p>
+    </footer>
+
+    <!-- Script para la barra de progreso de lectura -->
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>

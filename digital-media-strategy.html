@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La estrategia detrás del Marketing Digital</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una lectura limpia y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Barra de progreso de lectura - Retomamos la paleta Azul/Teal del curso de Marketing */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(to right, #2563eb, #10b981);
+            z-index: 50;
+            width: 0%;
+            transition: width 0.1s;
+        }
+        /* Decoración de fondo */
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-800 antialiased" id="inicio">
+
+    <!-- Barra de progreso -->
+    <div id="progress-bar"></div>
+
+    <!-- Cabecera / Hero con Navegación -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 bg-opacity-90 backdrop-blur-md">
+        <!-- Menú de Navegación -->
+        <nav class="border-b border-slate-100 px-4 py-3">
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="https://arcalightvi.github.io/knowledge-presentations/" class="hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing.html" class="hover:text-blue-600 transition-colors">Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/how-digital-marketing-works.html" class="hover:text-blue-600 transition-colors">Cómo funciona el Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-architecture.html" class="hover:text-blue-600 transition-colors">Arquitectura oculta del Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-strategy.html" class="hover:text-blue-600 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1">La estrategia detrás del Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-psycology.html" class="hover:text-blue-600 transition-colors">La psicología del Marketing</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-getting-started.html" class="hover:text-blue-600 transition-colors">Cómo empezar en Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-ai-support.html" class="hover:text-blue-600 transition-colors">⭐ Bonus: IA como apoyo en Marketing Digital</a>
+            </div>
+        </nav>
+        
+        <div class="max-w-4xl mx-auto px-6 py-4 text-center">
+            <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Presentación</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-500 pb-1">
+                La estrategia detrás del Marketing Digital
+            </h1>
+            <p class="text-slate-600 mt-2 font-medium bg-slate-100 inline-block px-4 py-1 rounded-full">
+                Esta parte conecta la teoría con la práctica.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Diapositiva 1 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 1
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">La diferencia entre estrategia y herramientas</h2>
+            
+            <p class="text-lg text-slate-700 mb-4">
+                Muchas personas piensan que hacer marketing digital es:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-6">
+                <!-- Tácticas -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl shadow-sm">
+                    <ul class="space-y-3 text-slate-600 font-medium line-through decoration-red-400 decoration-2 opacity-80">
+                        <li class="flex items-center"><span class="mr-2">📱</span> publicar en Instagram</li>
+                        <li class="flex items-center"><span class="mr-2">📢</span> hacer anuncios</li>
+                        <li class="flex items-center"><span class="mr-2">🛠️</span> usar herramientas</li>
+                    </ul>
+                    <p class="mt-4 text-red-600 font-bold text-center bg-red-50 py-2 rounded-lg">Pero esas son tácticas, no estrategia.</p>
+                </div>
+
+                <!-- Estrategia -->
+                <div class="bg-blue-50 border border-blue-200 p-5 rounded-xl shadow-sm">
+                    <p class="font-bold text-blue-900 mb-3">La estrategia responde preguntas como:</p>
+                    <ul class="space-y-2 text-slate-800 font-medium">
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">»</span> ¿a quién queremos llegar?</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">»</span> ¿qué problema resolvemos?</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">»</span> ¿por qué alguien debería elegirnos?</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">»</span> ¿cómo generamos confianza?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-4 rounded-lg text-center font-bold text-xl shadow-md">
+                Las herramientas solo ejecutan la estrategia.
+            </div>
+        </article>
+
+        <!-- Diapositiva 2 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-teal-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-teal-50 text-teal-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 2
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Entender al cliente</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                El primer paso de cualquier estrategia de marketing es entender a quién queremos ayudar.
+            </p>
+
+            <div class="text-center mb-8">
+                <p class="text-slate-500 text-sm font-bold uppercase tracking-widest mb-2">En marketing se utiliza un concepto llamado:</p>
+                <div class="inline-block bg-teal-600 text-white px-8 py-3 rounded-2xl shadow-lg">
+                    <p class="text-3xl font-black uppercase tracking-wide">Buyer Persona</p>
+                </div>
+                <p class="mt-3 text-lg font-medium text-teal-800 bg-teal-50 inline-block px-4 py-1 rounded-full border border-teal-100">
+                    Es una representación del cliente ideal.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-6">
+                <p class="font-bold text-slate-800 mb-4">Incluye cosas como:</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm">edad aproximada</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm">intereses</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm">problemas que enfrenta</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm">motivaciones</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm">objeciones antes de comprar</span>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-bold text-slate-800 border-l-4 border-teal-500 pl-4 py-2 bg-slate-50">
+                Mientras mejor se entiende al cliente, mejor se puede comunicar el mensaje.
+            </p>
+        </article>
+
+        <!-- Diapositiva 3 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 3
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Propuesta de valor</h2>
+            
+            <div class="bg-amber-50 border-2 border-amber-200 p-6 rounded-xl text-center mb-8 shadow-inner">
+                <p class="text-slate-700 mb-2 font-medium">La propuesta de valor responde una pregunta fundamental:</p>
+                <p class="text-2xl font-black text-amber-800 uppercase tracking-wide">¿Por qué alguien debería elegirnos?</p>
+            </div>
+
+            <p class="text-center text-lg text-slate-700 mb-2">No se trata solo de lo que vendemos.</p>
+            <p class="text-center text-lg font-bold text-slate-900 mb-8 bg-slate-100 py-2 rounded-lg">Se trata de qué beneficio recibe la persona.</p>
+
+            <p class="font-bold text-slate-500 uppercase tracking-widest text-xs mb-3 text-center">Por ejemplo:</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 items-stretch">
+                <!-- Lo que NO es -->
+                <div class="flex-1 bg-red-50 p-6 rounded-xl border border-red-200 text-center flex flex-col justify-center opacity-80">
+                    <p class="text-4xl mb-2">📷</p>
+                    <p class="text-red-800 font-bold text-lg line-through decoration-red-500 decoration-2">No vender fotografía.</p>
+                </div>
+                
+                <!-- Lo que SÍ es -->
+                <div class="flex-1 bg-blue-50 p-6 rounded-xl border-2 border-blue-300 text-center shadow-md">
+                    <p class="text-blue-700 font-black uppercase tracking-wider mb-3 text-sm">Sino:</p>
+                    <ul class="space-y-3 text-slate-800 font-medium">
+                        <li class="bg-white p-2 rounded shadow-sm">capturar recuerdos importantes</li>
+                        <li class="bg-white p-2 rounded shadow-sm">preservar momentos familiares</li>
+                        <li class="bg-white p-2 rounded shadow-sm">crear imágenes que duren toda la vida.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 4 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 4
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El mensaje correcto</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center bg-slate-50 py-4 rounded-lg">
+                Una vez que entendemos al cliente y nuestra propuesta de valor, debemos comunicarlo correctamente.
+            </p>
+
+            <p class="font-bold text-slate-800 mb-6 text-center text-xl">Un buen mensaje debe ser:</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-indigo-600 text-white p-6 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform">
+                    <span class="block text-4xl mb-3">💎</span>
+                    <span class="text-xl font-bold uppercase tracking-wide">claro</span>
+                </div>
+                <div class="bg-indigo-500 text-white p-6 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform">
+                    <span class="block text-4xl mb-3">🎯</span>
+                    <span class="text-xl font-bold uppercase tracking-wide">relevante</span>
+                </div>
+                <div class="bg-indigo-400 text-white p-6 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform">
+                    <span class="block text-4xl mb-3">❤️</span>
+                    <span class="text-xl font-bold uppercase tracking-wide">emocionalmente conectado</span>
+                </div>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-xl shadow-sm text-center">
+                <p class="font-bold text-red-900 text-lg">
+                    Muchas estrategias fallan porque el mensaje es confuso o genérico.
+                </p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 5 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 5
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Elegir los canales adecuados</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center">
+                No todos los canales funcionan para todos los negocios.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-slate-800 mb-4 text-center">Algunos ejemplos de canales digitales:</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">📱 redes sociales</div>
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">🔍 buscadores</div>
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">▶️ video</div>
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">📝 blogs</div>
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">📧 email</div>
+                    <div class="bg-white p-3 rounded-lg text-center shadow-sm border border-slate-100 font-bold text-slate-700">👥 comunidades</div>
+                </div>
+            </div>
+
+            <div class="bg-cyan-50 text-cyan-900 p-5 rounded-xl font-bold text-center text-xl shadow-inner border border-cyan-200">
+                La estrategia consiste en elegir dónde está la atención del público objetivo.
+            </div>
+        </article>
+
+        <!-- Diapositiva 6 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 6
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2 text-center">El contenido como puente</h2>
+            
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="bg-slate-800 text-white font-bold px-6 py-3 rounded-xl shadow-md">La marca</div>
+                <div class="flex-grow max-w-xs h-2 bg-blue-400 rounded-full relative">
+                    <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full text-sm">Contenido</span>
+                </div>
+                <div class="bg-slate-800 text-white font-bold px-6 py-3 rounded-xl shadow-md">La audiencia</div>
+            </div>
+
+            <p class="text-center text-slate-700 font-medium mb-8">El contenido conecta la marca con la audiencia. Puede tomar muchas formas:</p>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">videos</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">artículos</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">imágenes</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">historias</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">tutoriales</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded-full text-slate-700 font-medium shadow-sm">entretenimiento</span>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
+                <p class="font-bold text-slate-800 mb-3 text-center">El objetivo del contenido es generar:</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 text-center">
+                    <div class="bg-blue-50 text-blue-800 p-3 rounded-lg font-bold flex-1 border border-blue-100">interés</div>
+                    <div class="bg-blue-50 text-blue-800 p-3 rounded-lg font-bold flex-1 border border-blue-100">confianza</div>
+                    <div class="bg-blue-50 text-blue-800 p-3 rounded-lg font-bold flex-1 border border-blue-100">relación con la audiencia.</div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 7 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-rose-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-rose-50 text-rose-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 7
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Construir confianza</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 bg-rose-50 p-4 rounded-lg font-medium text-center border border-rose-100">
+                La confianza es uno de los factores más importantes en cualquier decisión de compra.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <p class="font-bold text-slate-800 mb-4">Las personas confían más cuando ven:</p>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-center bg-white border border-slate-200 p-3 rounded shadow-sm">
+                            <span class="text-rose-500 mr-3 text-xl">✓</span> opiniones de otros clientes
+                        </li>
+                        <li class="flex items-center bg-white border border-slate-200 p-3 rounded shadow-sm">
+                            <span class="text-rose-500 mr-3 text-xl">✓</span> experiencias reales
+                        </li>
+                        <li class="flex items-center bg-white border border-slate-200 p-3 rounded shadow-sm">
+                            <span class="text-rose-500 mr-3 text-xl">✓</span> transparencia
+                        </li>
+                        <li class="flex items-center bg-white border border-slate-200 p-3 rounded shadow-sm">
+                            <span class="text-rose-500 mr-3 text-xl">✓</span> consistencia en la comunicación
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl shadow-inner flex flex-col justify-center">
+                    <p class="font-bold text-slate-800 mb-4 text-center">Por eso muchas estrategias incluyen:</p>
+                    <div class="space-y-2 text-center">
+                        <div class="bg-slate-800 text-white py-2 px-4 rounded-lg font-bold">testimonios</div>
+                        <div class="bg-slate-800 text-white py-2 px-4 rounded-lg font-bold">casos reales</div>
+                        <div class="bg-slate-800 text-white py-2 px-4 rounded-lg font-bold">historias de clientes.</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 8 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 8
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El proceso de conversión</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center">
+                Cuando alguien muestra interés, el marketing busca facilitar el siguiente paso.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-slate-800 mb-4 text-center">Esto puede ser:</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white px-5 py-2 rounded-full shadow border border-slate-100 font-bold text-slate-700">contactar</span>
+                    <span class="bg-white px-5 py-2 rounded-full shadow border border-slate-100 font-bold text-slate-700">registrarse</span>
+                    <span class="bg-white px-5 py-2 rounded-full shadow border border-slate-100 font-bold text-slate-700">solicitar información</span>
+                    <span class="bg-amber-100 px-5 py-2 rounded-full shadow border border-amber-200 font-black text-amber-900">comprar</span>
+                </div>
+            </div>
+
+            <p class="font-bold text-slate-800 mb-4 text-center text-xl">La experiencia debe ser:</p>
+            <div class="grid grid-cols-3 gap-4 mb-8 text-center">
+                <div class="bg-amber-500 text-white p-4 rounded-xl shadow-md font-black text-xl tracking-wide">simple</div>
+                <div class="bg-amber-400 text-white p-4 rounded-xl shadow-md font-black text-xl tracking-wide">clara</div>
+                <div class="bg-amber-300 text-amber-900 p-4 rounded-xl shadow-md font-black text-xl tracking-wide">rápida</div>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg text-center">
+                <p class="font-bold text-red-900">Cada obstáculo reduce la probabilidad de conversión.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 9 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 9
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Medir y mejorar</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 border-l-4 border-cyan-500 pl-4">
+                Una de las ventajas del marketing digital es que casi todo puede medirse.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-slate-800 mb-4 text-center">Las estrategias se mejoran analizando datos como:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="block text-3xl mb-2 text-cyan-500">👍</span>
+                        <span class="text-sm font-medium text-slate-700">interacción con contenido</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="block text-3xl mb-2 text-cyan-500">🖱️</span>
+                        <span class="text-sm font-medium text-slate-700">clics en enlaces</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="block text-3xl mb-2 text-cyan-500">🛒</span>
+                        <span class="text-sm font-medium text-slate-700">conversiones</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="block text-3xl mb-2 text-cyan-500">⏱️</span>
+                        <span class="text-sm font-medium text-slate-700">retención de audiencia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center bg-cyan-50 text-cyan-900 p-5 rounded-xl font-bold text-lg shadow-inner border border-cyan-200">
+                El marketing moderno funciona como un proceso continuo de mejora.
+            </div>
+        </article>
+
+        <!-- Diapositiva 10 -->
+        <article class="bg-gradient-to-br from-slate-900 to-blue-950 rounded-2xl shadow-2xl p-8 md:p-12 text-white relative text-center">
+            <div class="absolute top-0 right-0 bg-white/10 text-white/80 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest backdrop-blur-sm">
+                Diapositiva 10
+            </div>
+            
+            <h2 class="text-3xl font-black mb-8 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-300">
+                La estrategia primero
+            </h2>
+            
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 mb-8 max-w-2xl mx-auto text-left">
+                <p class="font-semibold text-white mb-4 text-lg text-center">Antes de usar herramientas o plataformas es importante tener claridad sobre:</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm font-medium text-blue-50">
+                    <span class="bg-slate-800/60 px-4 py-2 rounded-full border border-blue-500/30">el público objetivo</span>
+                    <span class="bg-slate-800/60 px-4 py-2 rounded-full border border-blue-500/30">la propuesta de valor</span>
+                    <span class="bg-slate-800/60 px-4 py-2 rounded-full border border-blue-500/30">el mensaje</span>
+                    <span class="bg-slate-800/60 px-4 py-2 rounded-full border border-blue-500/30">los canales adecuados</span>
+                    <span class="bg-slate-800/60 px-4 py-2 rounded-full border border-blue-500/30">los objetivos</span>
+                </div>
+            </div>
+
+            <div class="bg-blue-900/50 border-2 border-blue-400 p-6 rounded-xl inline-block shadow-lg mx-auto w-full max-w-2xl transform hover:scale-105 transition-transform">
+                <p class="text-xl font-bold text-blue-200 mb-2">Las herramientas amplifican lo que ya existe.</p>
+                <p class="text-2xl md:text-3xl font-black text-white leading-tight">
+                    Si la estrategia es débil, las herramientas no pueden arreglarla.
+                </p>
+            </div>
+        </article>
+
+        <!-- Espaciador final para poder hacer scroll cómodo hasta abajo -->
+        <div class="h-10"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-4 py-8 text-center border-t border-slate-200">
+        <!-- Botón Volver al Inicio -->
+        <div class="mb-6">
+            <a href="#inicio" class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full text-sm font-semibold transition-colors shadow-sm">
+                <span class="mr-2 text-lg leading-none">↑</span> Volver al comienzo
+            </a>
+        </div>
+        
+        <p class="text-slate-500 text-sm">
+            Elaborado por <span class="font-bold text-slate-700">ArcalightVI</span> | Marzo 2026
+        </p>
+    </footer>
+
+    <!-- Script para la barra de progreso de lectura -->
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>

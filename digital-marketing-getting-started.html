@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo empezar realmente en Marketing Digital</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una lectura limpia y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Barra de progreso de lectura - Paleta "Masterclass" (Púrpura a Ámbar/Dorado) */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(to right, #6d28d9, #f59e0b);
+            z-index: 50;
+            width: 0%;
+            transition: width 0.1s;
+        }
+        /* Decoración de fondo */
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-800 antialiased" id="inicio">
+
+    <!-- Barra de progreso -->
+    <div id="progress-bar"></div>
+
+    <!-- Cabecera / Hero con Navegación -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 bg-opacity-90 backdrop-blur-md">
+        <!-- Menú de Navegación -->
+        <nav class="border-b border-slate-100 px-4 py-3">
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="https://arcalightvi.github.io/knowledge-presentations/" class="hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing.html" class="hover:text-blue-600 transition-colors">Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/how-digital-marketing-works.html" class="hover:text-blue-600 transition-colors">Cómo funciona el Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-architecture.html" class="hover:text-blue-600 transition-colors">Arquitectura oculta del Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-strategy.html" class="hover:text-blue-600 transition-colors">La estrategia detrás del Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-psycology.html" class="hover:text-blue-600 transition-colors">La psicología del Marketing</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-getting-started.html" class="hover:text-blue-600 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1">Cómo empezar en Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-ai-support.html" class="hover:text-blue-600 transition-colors">⭐ Bonus: IA como apoyo en Marketing Digital</a>
+            </div>
+        </nav>
+        
+        <div class="max-w-4xl mx-auto px-6 py-6 text-center">
+            <p class="text-sm font-black text-amber-500 uppercase tracking-widest mb-2">Presentación</p>
+            <h1 class="text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-800 to-amber-500 pb-1">
+                Cómo empezar realmente<br>en Marketing Digital
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Diapositiva 1 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-700 hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-800 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 1
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El marketing digital no es magia</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Muchas personas creen que abrir redes sociales automáticamente genera clientes.<br>
+                <strong class="text-purple-700">Pero en la práctica el marketing digital funciona como un proceso.</strong>
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4 text-center">Normalmente ocurre en este orden:</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-2 mb-8">
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center flex-1 w-full shadow-sm">
+                    <span class="block bg-purple-100 text-purple-800 w-8 h-8 rounded-full mx-auto flex items-center justify-center font-black mb-2">1</span>
+                    <span class="text-sm font-bold text-slate-700">las personas descubren el negocio</span>
+                </div>
+                <div class="text-slate-400 rotate-90 md:rotate-0 font-bold text-xl">→</div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center flex-1 w-full shadow-sm">
+                    <span class="block bg-purple-100 text-purple-800 w-8 h-8 rounded-full mx-auto flex items-center justify-center font-black mb-2">2</span>
+                    <span class="text-sm font-bold text-slate-700">observan el contenido</span>
+                </div>
+                <div class="text-slate-400 rotate-90 md:rotate-0 font-bold text-xl">→</div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center flex-1 w-full shadow-sm">
+                    <span class="block bg-purple-100 text-purple-800 w-8 h-8 rounded-full mx-auto flex items-center justify-center font-black mb-2">3</span>
+                    <span class="text-sm font-bold text-slate-700">empiezan a confiar</span>
+                </div>
+                <div class="text-slate-400 rotate-90 md:rotate-0 font-bold text-xl">→</div>
+                <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-center flex-1 w-full shadow-md">
+                    <span class="block bg-amber-200 text-amber-900 w-8 h-8 rounded-full mx-auto flex items-center justify-center font-black mb-2">4</span>
+                    <span class="text-sm font-bold text-amber-900">finalmente contactan o compran</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 text-white p-4 rounded-lg text-center shadow-md">
+                <p class="font-medium mb-1">Este proceso puede tomar tiempo.</p>
+                <p class="text-amber-400 font-bold uppercase tracking-wider text-sm">Por eso es importante tener expectativas realistas.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 2 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 2
+            </div>
+            
+            <p class="text-sm font-black text-amber-600 uppercase tracking-widest mb-1 mt-2">Paso 1</p>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Definir el tipo de cliente</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 bg-slate-50 p-4 rounded-lg border-l-4 border-amber-400">
+                Antes de empezar en redes sociales es importante entender a quién queremos llegar.
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4">Preguntas útiles:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="flex items-start bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl mr-3">🎂</span>
+                    <span class="font-medium text-slate-700 mt-1">¿qué edad tienen los clientes?</span>
+                </div>
+                <div class="flex items-start bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl mr-3">📍</span>
+                    <span class="font-medium text-slate-700 mt-1">¿en qué ciudad viven?</span>
+                </div>
+                <div class="flex items-start bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl mr-3">🧩</span>
+                    <span class="font-medium text-slate-700 mt-1">¿qué problema quieren resolver?</span>
+                </div>
+                <div class="flex items-start bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl mr-3">🛍️</span>
+                    <span class="font-medium text-slate-700 mt-1">¿qué tipo de servicio buscan?</span>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 p-5 rounded-xl text-center">
+                <p class="font-bold text-amber-900 mb-3">Esto ayuda a decidir:</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white px-5 py-2 rounded-full font-bold text-amber-800 shadow-sm">qué contenido publicar</span>
+                    <span class="bg-white px-5 py-2 rounded-full font-bold text-amber-800 shadow-sm">en qué redes participar.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 3 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-600 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 3
+            </div>
+            
+            <p class="text-sm font-black text-purple-600 uppercase tracking-widest mb-1 mt-2">Paso 2</p>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Elegir las redes sociales correctas</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center">
+                No es necesario estar en todas las plataformas.<br>
+                <strong class="bg-purple-100 text-purple-900 px-2 py-1 rounded">Cada red social tiene un tipo de audiencia diferente.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Facebook -->
+                <div class="bg-slate-50 border-l-4 border-blue-600 p-5 rounded-r-xl shadow-sm">
+                    <h3 class="font-black text-xl text-blue-700 mb-2 flex items-center">Facebook</h3>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Edad predominante:</p>
+                    <p class="text-lg font-bold text-slate-800 mb-2 bg-white inline-block px-3 py-1 rounded border border-slate-200">30 – 65+</p>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mt-2 mb-1">Funciona bien para:</p>
+                    <ul class="text-sm font-medium text-slate-700 flex flex-wrap gap-1 mb-3">
+                        <li class="bg-slate-200 px-2 py-1 rounded">negocios locales</li>
+                        <li class="bg-slate-200 px-2 py-1 rounded">servicios</li>
+                        <li class="bg-slate-200 px-2 py-1 rounded">grupos comunitarios</li>
+                        <li class="bg-slate-200 px-2 py-1 rounded">ventas directas.</li>
+                    </ul>
+                    <p class="text-xs text-slate-600 italic border-t pt-2 mt-2">Aunque muchos dicen que está muerto, todavía tiene una audiencia enorme.</p>
+                </div>
+
+                <!-- Instagram -->
+                <div class="bg-slate-50 border-l-4 border-pink-500 p-5 rounded-r-xl shadow-sm">
+                    <h3 class="font-black text-xl text-pink-600 mb-2 flex items-center">Instagram</h3>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Edad predominante:</p>
+                    <p class="text-lg font-bold text-slate-800 mb-2 bg-white inline-block px-3 py-1 rounded border border-slate-200">18 – 40</p>
+                    <p class="text-sm text-slate-700 mb-2">Es muy visual.</p>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Funciona bien para:</p>
+                    <ul class="text-sm font-medium text-slate-700 flex flex-wrap gap-1">
+                        <li class="bg-pink-100 text-pink-900 px-2 py-1 rounded">fotografía</li>
+                        <li class="bg-pink-100 text-pink-900 px-2 py-1 rounded">estética</li>
+                        <li class="bg-pink-100 text-pink-900 px-2 py-1 rounded">restaurantes</li>
+                        <li class="bg-pink-100 text-pink-900 px-2 py-1 rounded">viajes</li>
+                        <li class="bg-pink-100 text-pink-900 px-2 py-1 rounded">marcas personales.</li>
+                    </ul>
+                </div>
+
+                <!-- TikTok -->
+                <div class="bg-slate-50 border-l-4 border-slate-800 p-5 rounded-r-xl shadow-sm">
+                    <h3 class="font-black text-xl text-slate-800 mb-2 flex items-center">TikTok</h3>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Edad predominante:</p>
+                    <p class="text-lg font-bold text-slate-800 mb-2 bg-white inline-block px-3 py-1 rounded border border-slate-200">16 – 35</p>
+                    <p class="text-sm text-slate-700 font-medium border-t pt-2 mt-2">Tiene mucho alcance orgánico.</p>
+                    <p class="text-xs text-slate-600 italic">Un video puede llegar a miles de personas incluso si la cuenta es nueva.</p>
+                </div>
+
+                <!-- YouTube -->
+                <div class="bg-slate-50 border-l-4 border-red-600 p-5 rounded-r-xl shadow-sm">
+                    <h3 class="font-black text-xl text-red-600 mb-2 flex items-center">YouTube</h3>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Audiencia:</p>
+                    <p class="text-lg font-bold text-slate-800 mb-2 bg-white inline-block px-3 py-1 rounded border border-slate-200">de todas las edades.</p>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mt-2 mb-1">Funciona muy bien para:</p>
+                    <ul class="text-sm font-medium text-slate-700 flex flex-wrap gap-1 mb-3">
+                        <li class="bg-red-100 text-red-900 px-2 py-1 rounded">tutoriales</li>
+                        <li class="bg-red-100 text-red-900 px-2 py-1 rounded">explicaciones</li>
+                        <li class="bg-red-100 text-red-900 px-2 py-1 rounded">contenido educativo.</li>
+                    </ul>
+                    <p class="text-xs text-slate-600 italic border-t pt-2 mt-2">Los videos pueden seguir generando visitas durante años.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 4 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-400 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 4
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Redes de seguidores vs redes de descubrimiento</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center bg-slate-50 py-3 rounded-lg">
+                Las plataformas funcionan de manera diferente.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Redes de seguidores -->
+                <div class="bg-white border-2 border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="bg-slate-800 text-white text-center py-4">
+                        <h3 class="font-black text-xl uppercase tracking-wide">Redes de seguidores</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Ejemplos:</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded font-bold text-sm">Facebook</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded font-bold text-sm">Instagram</span>
+                        </div>
+                        <p class="text-slate-700 mb-3 font-medium">El contenido se muestra principalmente a personas que ya siguen la cuenta.</p>
+                        <p class="text-slate-500 italic text-sm border-t pt-3">El crecimiento suele ser gradual.</p>
+                    </div>
+                </div>
+
+                <!-- Redes de descubrimiento -->
+                <div class="bg-white border-2 border-amber-400 rounded-xl overflow-hidden shadow-md transform hover:-translate-y-1 transition-transform">
+                    <div class="bg-amber-500 text-white text-center py-4">
+                        <h3 class="font-black text-xl uppercase tracking-wide">Redes de descubrimiento</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">Ejemplos:</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-800 border border-slate-300 px-3 py-1 rounded font-bold text-sm">TikTok</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded font-bold text-sm">YouTube</span>
+                        </div>
+                        <p class="text-slate-700 mb-3 font-medium">Los algoritmos muestran contenido a personas que no siguen la cuenta.</p>
+                        <p class="text-amber-700 font-bold text-sm border-t border-amber-200 pt-3">Esto permite crecer mucho más rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 5 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 5
+            </div>
+            
+            <p class="text-sm font-black text-amber-600 uppercase tracking-widest mb-1 mt-2">Paso 3</p>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Qué tipo de contenido publicar</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center bg-slate-50 py-3 rounded-lg border border-slate-200">
+                Una estrategia simple para empezar es usar <strong class="text-amber-700">tres tipos de contenido.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-4">
+                <!-- Tipo 1 -->
+                <div class="bg-white border-2 border-slate-100 p-5 rounded-xl shadow-sm text-center hover:border-amber-300 transition-colors">
+                    <span class="block text-4xl mb-3">🛠️</span>
+                    <h3 class="font-bold text-lg text-slate-900 mb-3">Mostrar el trabajo</h3>
+                    <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                        <li class="bg-slate-50 py-1 rounded">antes y después</li>
+                        <li class="bg-slate-50 py-1 rounded">procesos</li>
+                        <li class="bg-slate-50 py-1 rounded">resultados finales.</li>
+                    </ul>
+                    <p class="font-bold text-amber-700 text-sm mt-auto border-t pt-3">Esto demuestra experiencia.</p>
+                </div>
+
+                <!-- Tipo 2 -->
+                <div class="bg-white border-2 border-slate-100 p-5 rounded-xl shadow-sm text-center hover:border-amber-300 transition-colors">
+                    <span class="block text-4xl mb-3">💡</span>
+                    <h3 class="font-bold text-lg text-slate-900 mb-3">Enseñar algo útil</h3>
+                    <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                        <li class="bg-slate-50 py-1 rounded">consejos</li>
+                        <li class="bg-slate-50 py-1 rounded">errores comunes</li>
+                        <li class="bg-slate-50 py-1 rounded">recomendaciones.</li>
+                    </ul>
+                    <p class="font-bold text-amber-700 text-sm mt-auto border-t pt-3">Esto posiciona al negocio como experto.</p>
+                </div>
+
+                <!-- Tipo 3 -->
+                <div class="bg-white border-2 border-slate-100 p-5 rounded-xl shadow-sm text-center hover:border-amber-300 transition-colors">
+                    <span class="block text-4xl mb-3">👋</span>
+                    <h3 class="font-bold text-lg text-slate-900 mb-3">Mostrar el lado humano</h3>
+                    <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                        <li class="bg-slate-50 py-1 rounded">historias</li>
+                        <li class="bg-slate-50 py-1 rounded">experiencias</li>
+                        <li class="bg-slate-50 py-1 rounded">momentos del trabajo.</li>
+                    </ul>
+                    <p class="font-bold text-amber-700 text-sm mt-auto border-t pt-3">Esto genera conexión con las personas.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 6 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-600 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 6
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2 text-center">Frecuencia de publicación</h2>
+            
+            <div class="flex flex-col items-center justify-center mb-8">
+                <p class="text-lg text-slate-600 mb-4 font-medium">Para empezar, una frecuencia razonable es:</p>
+                <div class="bg-gradient-to-r from-purple-700 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-xl transform hover:scale-105 transition-transform text-center w-full max-w-md">
+                    <span class="block text-5xl font-black mb-2">2 a 3</span>
+                    <span class="text-xl font-medium tracking-wide">publicaciones por semana.</span>
+                </div>
+            </div>
+
+            <div class="text-center bg-slate-50 border border-slate-200 p-6 rounded-xl max-w-lg mx-auto">
+                <p class="text-xl font-bold text-slate-800 mb-3">No es necesario publicar todos los días.</p>
+                <p class="text-purple-800 font-medium">
+                    La consistencia a largo plazo es más importante que publicar mucho durante poco tiempo.
+                </p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 7 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-400 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 7
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Interacción con clientes</h2>
+            
+            <p class="text-lg text-slate-700 mb-2 text-center">Las redes sociales no son solo un canal de publicidad.</p>
+            <p class="text-xl text-slate-900 font-black mb-8 text-center bg-amber-50 py-3 rounded-lg border border-amber-200">
+                También son un espacio de conversación.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-800 mb-4 uppercase tracking-widest text-sm">Buenas prácticas:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="bg-white p-2 rounded-full shadow-sm border border-slate-100 mr-3 text-xl">💬</span> 
+                            <span class="font-bold text-slate-700">responder comentarios</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-white p-2 rounded-full shadow-sm border border-slate-100 mr-3 text-xl">📨</span> 
+                            <span class="font-bold text-slate-700">contestar mensajes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-white p-2 rounded-full shadow-sm border border-slate-100 mr-3 text-xl">🙏</span> 
+                            <span class="font-bold text-slate-700">agradecer a quienes interactúan.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block bg-slate-800 text-white px-8 py-6 rounded-2xl shadow-lg relative">
+                        <div class="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-slate-800 rotate-45"></div>
+                        <p class="text-2xl font-bold">Esto ayuda a construir confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 8 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 8
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Herramientas útiles para empezar</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center bg-slate-50 py-3 rounded-lg">
+                Existen herramientas que facilitan mucho el trabajo.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Herramienta 1 -->
+                <div class="flex flex-col md:flex-row bg-white border-2 border-slate-100 rounded-xl overflow-hidden shadow-sm hover:border-purple-300 transition-colors">
+                    <div class="bg-gradient-to-br from-cyan-400 to-blue-500 text-white flex items-center justify-center p-6 md:w-48">
+                        <span class="font-black text-2xl tracking-wider">Canva</span>
+                    </div>
+                    <div class="p-5 flex-1">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Para diseño simple:</p>
+                        <p class="text-slate-700 font-medium">Permite crear imágenes, anuncios y publicaciones sin conocimientos de diseño.</p>
+                    </div>
+                </div>
+
+                <!-- Herramienta 2 -->
+                <div class="flex flex-col md:flex-row bg-white border-2 border-slate-100 rounded-xl overflow-hidden shadow-sm hover:border-green-300 transition-colors">
+                    <div class="bg-green-500 text-white flex items-center justify-center p-6 md:w-48 text-center">
+                        <span class="font-black text-xl leading-tight">WhatsApp<br>Business</span>
+                    </div>
+                    <div class="p-5 flex-1">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Para gestionar mensajes y clientes:</p>
+                        <p class="text-slate-700 font-medium">Permite organizar conversaciones y etiquetar clientes.</p>
+                    </div>
+                </div>
+
+                <!-- Herramienta 3 -->
+                <div class="flex flex-col md:flex-row bg-white border-2 border-slate-100 rounded-xl overflow-hidden shadow-sm hover:border-blue-300 transition-colors">
+                    <div class="bg-blue-600 text-white flex items-center justify-center p-6 md:w-48 text-center">
+                        <span class="font-black text-lg leading-tight">Meta<br>Business Suite</span>
+                    </div>
+                    <div class="p-5 flex-1">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Para gestionar redes sociales:</p>
+                        <p class="text-slate-700 font-medium">Permite administrar Facebook e Instagram desde un solo lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 9 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-600 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 9
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Herramientas que muchos creen obsoletas</h2>
+            
+            <p class="text-lg text-slate-800 font-bold mb-8 text-center bg-amber-100 py-3 rounded-lg">
+                Algunas herramientas siguen funcionando muy bien.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Herramienta 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl shadow-sm text-center flex flex-col">
+                    <span class="text-4xl mb-3">📧</span>
+                    <h3 class="font-black text-slate-800 mb-3 text-lg">Email marketing</h3>
+                    <p class="text-sm text-slate-600 mb-2 font-medium">Permite comunicación directa con clientes.</p>
+                    <p class="text-sm font-bold text-amber-700 mt-auto border-t border-slate-200 pt-3">Sigue teniendo uno de los retornos más altos.</p>
+                </div>
+
+                <!-- Herramienta 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl shadow-sm text-center flex flex-col">
+                    <span class="text-4xl mb-3">👥</span>
+                    <h3 class="font-black text-slate-800 mb-3 text-lg">Grupos en Facebook</h3>
+                    <p class="text-sm text-slate-600 mb-2 font-medium">Los grupos siguen siendo muy útiles para:</p>
+                    <ul class="text-sm font-bold text-slate-700 flex flex-wrap justify-center gap-1 mt-auto border-t border-slate-200 pt-3">
+                        <li class="bg-white px-2 py-1 rounded shadow-sm w-full">comunidades</li>
+                        <li class="bg-white px-2 py-1 rounded shadow-sm w-full">negocios locales</li>
+                        <li class="bg-white px-2 py-1 rounded shadow-sm w-full">recomendaciones.</li>
+                    </ul>
+                </div>
+
+                <!-- Herramienta 3 -->
+                <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl shadow-sm text-center flex flex-col">
+                    <span class="text-4xl mb-3">🌐</span>
+                    <h3 class="font-black text-slate-800 mb-3 text-lg">Páginas web</h3>
+                    <p class="text-sm text-slate-600 mb-2 font-medium">Tener un sitio propio genera credibilidad y permite aparecer en buscadores.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 10 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-purple-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-purple-50 text-purple-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 10
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Publicidad digital</h2>
+            
+            <div class="flex flex-col md:flex-row gap-6 items-center bg-purple-50 p-6 rounded-xl border border-purple-200 mb-8">
+                <div class="text-5xl">🚀</div>
+                <div>
+                    <p class="text-xl font-bold text-purple-900 mb-1">Los anuncios pueden acelerar resultados.</p>
+                    <p class="text-purple-800 font-medium">Pero funcionan mejor cuando ya existe contenido real en la cuenta.</p>
+                </div>
+            </div>
+
+            <p class="font-bold text-slate-800 mb-4 text-center">La publicidad se utiliza principalmente para:</p>
+
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="block text-2xl mb-2">📡</span>
+                    <span class="font-bold text-slate-700">aumentar alcance</span>
+                </div>
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="block text-2xl mb-2">🧲</span>
+                    <span class="font-bold text-slate-700">atraer nuevos clientes</span>
+                </div>
+                <div class="bg-white border-2 border-slate-100 p-4 rounded-xl shadow-sm">
+                    <span class="block text-2xl mb-2">🎯</span>
+                    <span class="font-bold text-slate-700">promocionar servicios específicos.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 11 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-red-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-red-50 text-red-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 11
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Errores comunes al empezar</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+                <div class="flex items-center bg-red-50 border border-red-200 p-4 rounded-xl shadow-sm">
+                    <span class="bg-white text-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold flex-shrink-0 shadow-sm">❌</span>
+                    <p class="text-slate-800 font-medium">Esperar resultados inmediatos.</p>
+                </div>
+                <div class="flex items-center bg-red-50 border border-red-200 p-4 rounded-xl shadow-sm">
+                    <span class="bg-white text-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold flex-shrink-0 shadow-sm">❌</span>
+                    <p class="text-slate-800 font-medium">Compararse con cuentas grandes.</p>
+                </div>
+                <div class="flex items-center bg-red-50 border border-red-200 p-4 rounded-xl shadow-sm">
+                    <span class="bg-white text-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold flex-shrink-0 shadow-sm">❌</span>
+                    <p class="text-slate-800 font-medium">Publicar solo contenido de venta.</p>
+                </div>
+                <div class="flex items-center bg-red-50 border border-red-200 p-4 rounded-xl shadow-sm">
+                    <span class="bg-white text-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold flex-shrink-0 shadow-sm">❌</span>
+                    <p class="text-slate-800 font-medium">Abandonar demasiado rápido.</p>
+                </div>
+            </div>
+
+            <div class="text-center bg-slate-800 text-white p-4 rounded-lg font-bold text-xl shadow-md max-w-lg mx-auto">
+                El crecimiento en redes suele ser gradual.
+            </div>
+        </article>
+
+        <!-- Diapositiva 12 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-amber-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-amber-50 text-amber-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 12
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2 text-center">Mentalidad correcta</h2>
+            
+            <p class="text-xl text-slate-800 font-bold text-center mb-8 bg-amber-50 py-4 rounded-xl border border-amber-200">
+                El marketing digital funciona mejor cuando se ve como un <strong class="text-amber-700">proceso de aprendizaje</strong>.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="text-center font-bold text-slate-700 mb-4">Con el tiempo se mejora en:</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <div class="bg-white p-4 rounded-full shadow-sm font-bold text-slate-800 border-2 border-slate-100 flex-1 text-center w-full">contenido</div>
+                    <span class="text-slate-400 rotate-90 md:rotate-0 font-bold text-xl">→</span>
+                    <div class="bg-white p-4 rounded-full shadow-sm font-bold text-slate-800 border-2 border-slate-100 flex-1 text-center w-full">comunicación</div>
+                    <span class="text-slate-400 rotate-90 md:rotate-0 font-bold text-xl">→</span>
+                    <div class="bg-white p-4 rounded-full shadow-sm font-bold text-slate-800 border-2 border-slate-100 flex-1 text-center w-full">interacción con clientes.</div>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-black text-amber-600 uppercase tracking-wide">
+                Los negocios que son constantes suelen obtener mejores resultados.
+            </p>
+        </article>
+
+        <!-- Diapositiva 13 -->
+        <article class="bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white relative text-center border-t-4 border-amber-500">
+            <div class="absolute top-0 right-0 bg-white/10 text-white/80 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest backdrop-blur-sm">
+                Diapositiva 13
+            </div>
+            
+            <h2 class="text-3xl font-black mb-6 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500">
+                Conclusión
+            </h2>
+            
+            <p class="text-xl text-purple-100 mb-8 font-light">
+                El marketing digital puede convertirse en una herramienta poderosa para atraer nuevos clientes.
+            </p>
+
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 mb-8 max-w-2xl mx-auto text-left">
+                <p class="font-semibold text-white mb-4 text-lg text-center">Pero funciona mejor cuando se combina:</p>
+                <div class="grid grid-cols-2 gap-3 text-sm font-bold text-amber-100 text-center">
+                    <div class="bg-slate-800/50 p-3 rounded border border-purple-500/50">estrategia</div>
+                    <div class="bg-slate-800/50 p-3 rounded border border-purple-500/50">contenido útil</div>
+                    <div class="bg-slate-800/50 p-3 rounded border border-purple-500/50">constancia</div>
+                    <div class="bg-slate-800/50 p-3 rounded border border-purple-500/50">interacción con la audiencia.</div>
+                </div>
+            </div>
+
+            <div class="bg-purple-900/50 border border-amber-500/50 p-6 rounded-xl inline-block shadow-lg mx-auto w-full max-w-2xl">
+                <p class="text-lg text-purple-200 font-medium mb-2">Las redes sociales no reemplazan la calidad del trabajo.</p>
+                <p class="text-2xl font-black text-white">Pero sí pueden ayudar a que más personas lo descubran.</p>
+            </div>
+        </article>
+
+        <!-- Espaciador final para poder hacer scroll cómodo hasta abajo -->
+        <div class="h-10"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-4 py-8 text-center border-t border-slate-200">
+        <!-- Botón Volver al Inicio -->
+        <div class="mb-6">
+            <a href="#inicio" class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full text-sm font-semibold transition-colors shadow-sm">
+                <span class="mr-2 text-lg leading-none">↑</span> Volver al comienzo
+            </a>
+        </div>
+        
+        <p class="text-slate-500 text-sm">
+            Elaborado por <span class="font-bold text-slate-700">ArcalightVI</span> | Marzo 2026
+        </p>
+    </footer>
+
+    <!-- Script para la barra de progreso de lectura -->
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
+```

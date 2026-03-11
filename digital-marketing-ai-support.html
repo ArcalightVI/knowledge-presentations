@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus: IA como apoyo en Marketing Digital</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter para una lectura limpia y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Barra de progreso de lectura - Volvemos a la paleta Azul/Esmeralda */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 6px;
+            background: linear-gradient(to right, #2563eb, #10b981);
+            z-index: 50;
+            width: 0%;
+            transition: width 0.1s;
+        }
+        /* Decoración de fondo - Volvemos al original */
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern text-slate-800 antialiased" id="inicio">
+
+    <!-- Barra de progreso -->
+    <div id="progress-bar"></div>
+
+    <!-- Cabecera / Hero con Navegación -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 bg-opacity-90 backdrop-blur-md">
+        <!-- Menú de Navegación -->
+        <nav class="border-b border-slate-100 px-4 py-3">
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="https://arcalightvi.github.io/knowledge-presentations/" class="hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing.html" class="hover:text-blue-600 transition-colors">Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/how-digital-marketing-works.html" class="hover:text-blue-600 transition-colors">Cómo funciona el Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-architecture.html" class="hover:text-blue-600 transition-colors">Arquitectura oculta del Marketing Digital</a>
+                <a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-strategy.html" class="hover:text-blue-600 transition-colors">La estrategia detrás del Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-media-psycology.html" class="hover:text-blue-600 transition-colors">La psicología del Marketing</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-getting-started.html" class="hover:text-blue-600 transition-colors">Cómo empezar en Marketing Digital</a>
+				<a href="https://arcalightvi.github.io/knowledge-presentations/digital-marketing-ai-support.html" class="hover:text-blue-600 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1">⭐ Bonus: IA como apoyo en Marketing Digital</a>
+            </div>
+        </nav>
+        
+        <!-- Tamaños de fuente restaurados al original -->
+        <div class="max-w-4xl mx-auto px-6 py-4 text-center">
+            <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Presentación</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-500 pb-1">
+                Inteligencia Artificial como apoyo en Marketing Digital
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Diapositiva 1 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-600 hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 1
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">El desafío al empezar en marketing digital</h2>
+            
+            <p class="text-lg text-slate-700 mb-6">
+                Cuando una persona empieza a aprender sobre marketing digital suele encontrarse con muchas áreas diferentes.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">Estrategia</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">redes sociales</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">contenido</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">psicología del consumidor</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">algoritmos</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">herramientas digitales</span>
+                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-slate-700 font-medium shadow-sm hover:border-blue-300 transition-colors">publicidad pagada</span>
+            </div>
+
+            <p class="text-center text-slate-600 mb-6 font-medium">
+                Esto puede dar la impresión de que se necesita mucho conocimiento para empezar.<br>
+                Para muchas personas esto genera una pregunta natural:
+            </p>
+
+            <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl text-center shadow-inner">
+                <p class="text-xl font-bold text-blue-900">¿Necesito saber todo esto para poder comenzar?</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 2 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-teal-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-teal-50 text-teal-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 2
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La realidad del marketing moderno</h2>
+            
+            <p class="text-lg text-slate-700 mb-2">
+                En la práctica, muchas personas que trabajan en marketing no dominan todas las áreas.
+            </p>
+            <p class="text-lg text-slate-700 mb-6 bg-slate-50 p-4 rounded-lg font-medium border border-slate-100">
+                En lugar de eso utilizan herramientas que les ayudan a resolver problemas específicos.
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4 text-center">Por ejemplo:</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 text-center">
+                <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+                    <span class="block text-3xl mb-2 text-teal-500">🎨</span>
+                    <span class="text-sm font-medium text-slate-700">herramientas de diseño</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+                    <span class="block text-3xl mb-2 text-teal-500">📈</span>
+                    <span class="text-sm font-medium text-slate-700">herramientas de análisis</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+                    <span class="block text-3xl mb-2 text-teal-500">🗓️</span>
+                    <span class="text-sm font-medium text-slate-700">herramientas de programación de contenido</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+                    <span class="block text-3xl mb-2 text-teal-500">⚙️</span>
+                    <span class="text-sm font-medium text-slate-700">herramientas de automatización</span>
+                </div>
+            </div>
+
+            <div class="text-center bg-slate-800 text-white p-6 rounded-xl shadow-md">
+                <p class="text-teal-300 mb-2 font-medium">En los últimos años apareció una herramienta que cambió mucho esta dinámica:</p>
+                <p class="text-2xl font-bold text-white uppercase tracking-wide">la inteligencia artificial.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 3 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 3
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La IA como asistente de conocimiento</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center">
+                Las herramientas de inteligencia artificial han sido entrenadas con enormes cantidades de información.
+            </p>
+
+            <div class="bg-indigo-50 border border-indigo-200 p-6 rounded-xl mb-8 shadow-sm">
+                <p class="font-bold text-indigo-900 mb-4 text-center">Gracias a esto pueden ayudar a:</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">💡</span> explicar conceptos
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">🗂️</span> organizar ideas
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">🗺️</span> proponer estrategias
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">✍️</span> generar textos
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">✨</span> crear ejemplos
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-700 border border-indigo-100 flex items-center">
+                        <span class="mr-3 text-indigo-500 text-xl">📑</span> resumir información
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-bold text-slate-800 bg-slate-50 py-3 rounded-lg border border-slate-200">
+                Esto permite que una persona pueda avanzar mucho más rápido en su proceso de aprendizaje.
+            </p>
+        </article>
+
+        <!-- Diapositiva 4 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 4
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Un profesor disponible 24/7</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 bg-cyan-50 p-4 rounded-lg border-l-4 border-cyan-500">
+                Una de las mayores ventajas de la inteligencia artificial es que funciona como un asistente disponible en cualquier momento.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-8 items-center mb-8">
+                <div class="flex-1">
+                    <p class="font-bold text-slate-800 mb-3">Se puede consultar cuando aparecen dudas como:</p>
+                    <ul class="space-y-3 text-slate-700 font-medium">
+                        <li class="flex items-center bg-white border border-slate-100 p-2 rounded shadow-sm"><span class="text-cyan-500 mr-3 text-lg">❓</span> qué contenido publicar</li>
+                        <li class="flex items-center bg-white border border-slate-100 p-2 rounded shadow-sm"><span class="text-cyan-500 mr-3 text-lg">❓</span> cómo mejorar una idea</li>
+                        <li class="flex items-center bg-white border border-slate-100 p-2 rounded shadow-sm"><span class="text-cyan-500 mr-3 text-lg">❓</span> cómo explicar un servicio</li>
+                        <li class="flex items-center bg-white border border-slate-100 p-2 rounded shadow-sm"><span class="text-cyan-500 mr-3 text-lg">❓</span> cómo estructurar una campaña</li>
+                        <li class="flex items-center bg-white border border-slate-100 p-2 rounded shadow-sm"><span class="text-cyan-500 mr-3 text-lg">❓</span> cómo mejorar un texto</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-1 bg-slate-50 border border-slate-200 p-6 rounded-xl text-center w-full">
+                    <p class="text-slate-500 font-bold uppercase tracking-wider mb-4 text-xs">En ese sentido, la IA puede actuar como:</p>
+                    <div class="flex flex-col gap-2">
+                        <span class="bg-cyan-600 text-white py-2 rounded text-md font-bold shadow-sm">profesor</span>
+                        <span class="bg-cyan-500 text-white py-2 rounded text-md font-bold shadow-sm">consultor</span>
+                        <span class="bg-cyan-400 text-white py-2 rounded text-md font-bold shadow-sm">guía de aprendizaje</span>
+                        <span class="bg-cyan-300 text-cyan-900 py-2 rounded text-md font-bold shadow-sm">asistente creativo.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 5 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-emerald-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 5
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Aprender haciendo preguntas</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center">
+                Una forma muy efectiva de usar la inteligencia artificial es simplemente preguntar cuando algo no se entiende.
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl mb-8">
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 text-center">Por ejemplo:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400"></div>
+                        <span class="font-bold text-slate-800 block mb-1 text-emerald-700">💬 "Explícame..."</span>
+                        <span class="text-slate-600 text-sm">un concepto de marketing</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400"></div>
+                        <span class="font-bold text-slate-800 block mb-1 text-emerald-700">💬 "Dame..."</span>
+                        <span class="text-slate-600 text-sm">ejemplos de contenido</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400"></div>
+                        <span class="font-bold text-slate-800 block mb-1 text-emerald-700">💬 "Sugiéreme..."</span>
+                        <span class="text-slate-600 text-sm">ideas para redes sociales</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400"></div>
+                        <span class="font-bold text-slate-800 block mb-1 text-emerald-700">💬 "Mejora..."</span>
+                        <span class="text-slate-600 text-sm">este texto</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center bg-emerald-50 border border-emerald-200 p-5 rounded-xl">
+                <p class="text-slate-700 mb-1 font-medium">Esto permite aprender mientras se trabaja.</p>
+                <p class="text-lg font-bold text-emerald-800">La IA se convierte en una herramienta de aprendizaje continuo.</p>
+            </div>
+        </article>
+
+        <!-- Diapositiva 6 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 6
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">Simplificando tareas de marketing</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 text-center bg-blue-50 py-3 rounded-lg border border-blue-100">
+                Muchas tareas que antes requerían mucho tiempo ahora pueden hacerse más rápido con ayuda de la IA.
+            </p>
+
+            <div class="mb-8 max-w-2xl mx-auto">
+                <p class="font-bold text-slate-800 mb-4 text-center">Por ejemplo:</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold text-sm">✓</span>
+                        <span class="text-slate-700 font-medium">generar ideas de publicaciones</span>
+                    </li>
+                    <li class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold text-sm">✓</span>
+                        <span class="text-slate-700 font-medium">proponer títulos o frases</span>
+                    </li>
+                    <li class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold text-sm">✓</span>
+                        <span class="text-slate-700 font-medium">organizar información</span>
+                    </li>
+                    <li class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold text-sm">✓</span>
+                        <span class="text-slate-700 font-medium">crear borradores de textos</span>
+                    </li>
+                    <li class="flex items-center bg-white border border-slate-200 p-3 rounded-lg shadow-sm">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold text-sm">✓</span>
+                        <span class="text-slate-700 font-medium">estructurar contenido</span>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center font-bold text-slate-800 text-md bg-slate-100 py-3 rounded-lg">
+                Esto no significa que la IA haga todo el trabajo, pero puede reducir mucho el esfuerzo inicial.
+            </p>
+        </article>
+
+        <!-- Diapositiva 7 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-teal-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-teal-50 text-teal-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 7
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">No es necesario saber todo desde el inicio</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center">
+                Uno de los cambios más importantes que trae la inteligencia artificial es que ya no es necesario dominar todas las áreas antes de empezar.
+            </p>
+
+            <div class="bg-teal-50 border border-teal-200 p-6 rounded-xl mb-8 shadow-sm">
+                <p class="font-bold text-teal-900 mb-4 text-center text-lg">Hoy es más importante:</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center flex-1 border border-teal-100">
+                        <span class="block text-3xl mb-2">🧠</span>
+                        <span class="font-bold text-slate-800 text-sm">entender los conceptos básicos</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center flex-1 border border-teal-100">
+                        <span class="block text-3xl mb-2">🎯</span>
+                        <span class="font-bold text-slate-800 text-sm">tener claro el objetivo</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center flex-1 border border-teal-100">
+                        <span class="block text-3xl mb-2">🗣️</span>
+                        <span class="font-bold text-slate-800 text-sm">saber formular preguntas</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-lg font-bold text-slate-800">
+                A partir de ahí, la IA puede ayudar a explorar soluciones.
+            </p>
+        </article>
+
+        <!-- Diapositiva 8 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-indigo-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 8
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 mt-2">La IA no reemplaza el criterio humano</h2>
+            
+            <p class="text-lg text-slate-700 mb-6 bg-slate-50 p-4 rounded-lg text-center border-l-4 border-indigo-400">
+                Aunque la inteligencia artificial puede generar muchas ideas y sugerencias, <strong class="text-indigo-600">sigue siendo una herramienta.</strong>
+            </p>
+
+            <p class="font-bold text-slate-800 mb-4 text-center">Hay aspectos que siguen dependiendo completamente de las personas:</p>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-white border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="text-indigo-700 font-medium text-sm">conocer el negocio</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="text-indigo-700 font-medium text-sm">entender a los clientes</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="text-indigo-700 font-medium text-sm">tomar decisiones estratégicas</span>
+                </div>
+                <div class="bg-white border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="text-indigo-700 font-medium text-sm">adaptar las ideas al contexto real</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 text-white p-4 rounded-lg text-center font-medium shadow-md">
+                La IA puede proponer opciones, pero <strong class="text-indigo-300">alguien debe decidir cuál tiene sentido.</strong>
+            </div>
+        </article>
+
+        <!-- Diapositiva 9 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-cyan-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-cyan-50 text-cyan-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 9
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">La IA no conoce tu negocio</h2>
+            
+            <div class="text-center mb-8">
+                <p class="text-lg text-slate-700 mb-4">La inteligencia artificial trabaja con información general.</p>
+                <span class="inline-block bg-slate-100 text-slate-800 font-bold px-6 py-2 rounded-full uppercase tracking-wide border border-slate-300">
+                    No conoce directamente:
+                </span>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 grayscale opacity-60">🙈</span>
+                    <span class="font-medium text-slate-700 text-sm">tu experiencia</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 grayscale opacity-60">🙈</span>
+                    <span class="font-medium text-slate-700 text-sm">tus clientes reales</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 grayscale opacity-60">🙈</span>
+                    <span class="font-medium text-slate-700 text-sm">tu reputación</span>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-2xl mb-2 grayscale opacity-60">🙈</span>
+                    <span class="font-medium text-slate-700 text-sm">tu mercado específico</span>
+                </div>
+            </div>
+
+            <p class="text-center font-bold text-cyan-900 bg-cyan-50 py-3 rounded-lg border border-cyan-200">
+                Por eso muchas respuestas deben ajustarse al contexto real del negocio.
+            </p>
+        </article>
+
+        <!-- Diapositiva 10 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-blue-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-blue-50 text-blue-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 10
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">Usar la IA con pensamiento crítico</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 bg-slate-50 p-4 rounded-lg text-center border border-slate-200">
+                La inteligencia artificial puede equivocarse o generar información incompleta.
+            </p>
+
+            <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl mb-8">
+                <p class="font-bold text-blue-900 mb-4 text-center">Por eso siempre es recomendable:</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-800 text-center flex-1 border border-blue-100 text-sm">
+                        <span class="text-blue-500 mr-2 text-lg">🔍</span> revisar lo que genera
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-800 text-center flex-1 border border-blue-100 text-sm">
+                        <span class="text-blue-500 mr-2 text-lg">⚙️</span> adaptarlo al contexto
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-lg shadow-sm font-medium text-slate-800 text-center flex-1 border border-blue-100 text-sm">
+                        <span class="text-blue-500 mr-2 text-lg">✅</span> verificar información importante
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-2">La mejor forma de usar IA es combinar:</p>
+                <div class="inline-flex items-center justify-center gap-4 bg-slate-800 text-white px-8 py-3 rounded-xl shadow-md font-bold text-lg">
+                    <span>tecnología</span>
+                    <span class="text-blue-400">+</span>
+                    <span>criterio humano.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diapositiva 11 -->
+        <article class="bg-white rounded-2xl shadow-lg p-6 md:p-10 border-t-4 border-emerald-500 hover:shadow-xl transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-700 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest">
+                Diapositiva 11
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-2">La verdadera ventaja</h2>
+            
+            <p class="text-lg text-slate-700 mb-8 text-center">
+                Cuando se utiliza correctamente, la inteligencia artificial permite:
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-emerald-50 border border-emerald-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-3xl mb-2 text-emerald-500">🚀</span>
+                    <span class="font-medium text-slate-800 text-sm">aprender más rápido</span>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-3xl mb-2 text-emerald-500">🔭</span>
+                    <span class="font-medium text-slate-800 text-sm">explorar ideas con facilidad</span>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-3xl mb-2 text-emerald-500">⏳</span>
+                    <span class="font-medium text-slate-800 text-sm">ahorrar tiempo en tareas repetitivas</span>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 p-4 rounded-xl text-center shadow-sm">
+                    <span class="block text-3xl mb-2 text-emerald-500">📁</span>
+                    <span class="font-medium text-slate-800 text-sm">organizar mejor la información</span>
+                </div>
+            </div>
+
+            <p class="text-center font-bold text-slate-800 bg-slate-100 py-4 px-6 rounded-lg text-md">
+                Esto permite que más personas puedan participar en el mundo digital sin necesitar años de formación técnica.
+            </p>
+        </article>
+
+        <!-- Diapositiva 12 -->
+        <article class="bg-gradient-to-br from-slate-900 to-blue-950 rounded-2xl shadow-2xl p-8 md:p-12 text-white relative text-center">
+            <div class="absolute top-0 right-0 bg-white/10 text-white/80 font-bold text-xs px-4 py-2 rounded-bl-xl uppercase tracking-widest backdrop-blur-sm">
+                Diapositiva 12
+            </div>
+            
+            <h2 class="text-3xl font-black mb-6 mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-300">
+                Conclusión
+            </h2>
+            
+            <p class="text-xl text-blue-100 mb-2 font-light">
+                El marketing digital puede parecer complejo al principio.
+            </p>
+            <p class="text-lg text-white font-medium mb-8">
+                Pero hoy existen herramientas que ayudan a simplificar muchos procesos.
+            </p>
+
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 mb-8 max-w-2xl mx-auto text-left">
+                <p class="font-semibold text-white mb-4 text-center">La inteligencia artificial puede funcionar como:</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm font-medium text-blue-50 text-center">
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-blue-500/50">un asistente</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-blue-500/50">un generador de ideas</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-blue-500/50">un apoyo creativo</span>
+                    <span class="bg-slate-800/50 px-4 py-2 rounded-full border border-blue-500/50">un profesor disponible en cualquier momento.</span>
+                </div>
+            </div>
+
+            <div class="bg-blue-900/50 border border-blue-500/50 p-6 rounded-xl inline-block shadow-lg mx-auto w-full max-w-2xl">
+                <p class="text-lg text-teal-200 font-medium mb-2">No reemplaza el conocimiento ni la experiencia.</p>
+                <p class="text-xl font-bold text-white">Pero puede ayudar a aprender más rápido y a trabajar de forma más eficiente.</p>
+            </div>
+        </article>
+
+        <!-- Espaciador final para poder hacer scroll cómodo hasta abajo -->
+        <div class="h-10"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-4 py-8 text-center border-t border-slate-200">
+        <!-- Botón Volver al Inicio -->
+        <div class="mb-6">
+            <a href="#inicio" class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full text-sm font-semibold transition-colors shadow-sm">
+                <span class="mr-2 text-lg leading-none">↑</span> Volver al comienzo
+            </a>
+        </div>
+        
+        <p class="text-slate-500 text-sm">
+            Elaborado por <span class="font-bold text-slate-700">ArcalightVI</span> | Marzo 2026
+        </p>
+    </footer>
+
+    <!-- Script para la barra de progreso de lectura -->
+    <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
